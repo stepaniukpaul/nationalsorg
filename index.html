@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<title>Nationsorg</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<link href="./assets/styles/Bootstrap/bootstrap.min.css" rel="stylesheet">
+		<link href="./assets/styles/Slick/slick.css" rel="stylesheet">
+		<link href="./assets/styles/main.css" rel="stylesheet">
+
+		<script src="./assets/scripts/jQuery/jquery-3.3.1.min.js"></script>
+		<script src="./assets/scripts/Slick/slick.min.js"></script>
+		<script src="./assets/scripts/clocks.js"></script>
+		<script src="./assets/scripts/main.js"></script>
+	</head>
+	<body>
+		<div class="m-control">
+			<div class="m-control__burger">
+				<span class="m-control__line m-control__line_top"></span>
+				<span class="m-control__line m-control__line_icon"></span>
+				<span class="m-control__line m-control__line_end"></span>
+			</div>
+		</div>
+		<header class="header">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-12 col-md-6 col-lg-5 col-xl-3">
+						<div class="header__control">
+							<div class="dropdown">
+								<button class="btn btn_default dropdown__button">
+									<span class="btn__label">Lyon</span>
+									<span class="btn__label icon icon_caret"></span>
+								</button>
+								<ul class="actions-menu dropdown__content">
+									<li>
+										<a href="#" class="actions-menu__link">Lyon</a>
+									</li>
+									<li>
+										<a href="#" class="actions-menu__link">Lyon</a>
+									</li>
+								</ul>
+							</div>
+							<div class="dropdown">
+								<button class="btn dropdown__button">
+									<span class="btn__label">
+										<span class="country-flag">
+											<span class="country-flag__item">RU</span>
+											<img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+										</span>
+									</span>
+									<span class="btn__label icon icon_caret"></span>
+								</button>
+								<ul class="actions-menu dropdown__content">
+									<li>
+										<a href="#" class="actions-menu__link">
+											<span class="country-flag">
+												<span class="country-flag__item">EU</span>
+												<img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+											</span>
+										</a>
+									</li>
+									<li class="actions-menu__divider"></li>
+									<li>
+										<a href="#" class="actions-menu__link">
+											<span class="country-flag">
+												<span class="country-flag__item">FR</span>
+												<img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="logo">
+							<a href="#" class="link link_seo"></a>
+							<img src="./assets/images/logo.png" alt="" />
+							<div class="logo__wrap">
+								<span class="logo__title">Nationsorg</span>
+								<span class="logo__subtitle">beta part1 ver.:0.1</span>
+							</div>
+						</div>
+					</div>
+					<div class="widgets col-12 col-xl-6">
+						<div class="clock-group">
+							<div class="clock clock-group__item" data-clock="2" id="c1">
+								<ul class="clock__face">
+									<li class="clock__hand clock__hand_second"></li>
+									<li class="clock__hand clock__hand_minute"></li>
+									<li class="clock__hand clock__hand_hour"></li>
+								</ul>
+								<span class="clock__location">Brest</span>
+							</div>
+							<div class="clock clock-group__item" data-clock="1" id="c2">
+								<ul class="clock__face">
+									<li class="clock__hand clock__hand_second"></li>
+									<li class="clock__hand clock__hand_minute"></li>
+									<li class="clock__hand clock__hand_hour"></li>
+								</ul>
+								<span class="clock__location">Lyon</span>
+							</div>
+							<div class="clock clock-group__item" data-clock="3" id="c3">
+								<ul class="clock__face">
+									<li class="clock__hand clock__hand_second"></li>
+									<li class="clock__hand clock__hand_minute"></li>
+									<li class="clock__hand clock__hand_hour"></li>
+								</ul>
+								<span class="clock__location">Moscow</span>
+							</div>
+							<div class="clock clock-group__item" data-clock="-4" id="c4">
+								<ul class="clock__face">
+									<li class="clock__hand clock__hand_second"></li>
+									<li class="clock__hand clock__hand_minute"></li>
+									<li class="clock__hand clock__hand_hour"></li>
+								</ul>
+								<span class="clock__location">New York</span>
+							</div>
+						</div>
+						<div class="weather">
+							<img src="./assets/images/widget.png" alt="">
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-5 col-xl-3">
+						<ul class="auth-controls">
+							<li class="auth-controls__item">
+								<button class="btn">
+									<span class="btn__label icon icon_lock"></span>
+									<span class="btn__label">Register</span>
+								</button>
+							</li>
+							<li class="auth-controls__item">
+								<button class="btn btn_default">
+									<span class="btn__label icon icon_login"></span>
+									<span class="btn__label">Login</span>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="layout">
+			<div class="m-menu">
+				<nav class="nav-main nav-main_m-menu">
+					<div class="nav-main__wrap container">
+						<a href="#" class="nav-main__link is-active">
+							<span class="nav-main__label">Home</span>
+						</a>
+						<a href="#" class="nav-main__link">
+							<span class="nav-main__label">Language courses</span>
+						</a>
+						<a href="#" class="nav-main__link">
+							<span class="nav-main__label">Groups</span>
+						</a>
+						<a href="#" class="nav-main__link">
+							<span class="nav-main__label">Events</span>
+						</a>
+						<a href="#" class="nav-main__link">
+							<span class="nav-main__label">Forum</span>
+						</a>
+						<a href="#" class="nav-main__link">
+							<span class="nav-main__label">Partners</span>
+						</a>
+					</div>
+				</nav>
+			</div>
+			<div class="container">
+				<div class="greeting layout__greeting">
+					<div style="background-image: url(./assets/images/temp/bg.jpg);" class="banner">
+						<div class="banner__wrap">
+							<span class="banner__label">Lyon</span>
+						</div>
+					</div>
+					<div class="greeting__wrap">
+						<span class="greeting__title">Welcome to Lyon</span>
+						<div class="greeting__desc">
+							<p>Город во Франции, административный центр региона Овернь — Рона — Альпы, особого
+								<br>административного образования Лионская метрополия и 14 кантонов.</p>
+							<span>wikipedia</span>
+						</div>
+						<a class="btn btn_accent btn_size_lg">
+							<span class="btn__label">See more</span>
+						</a>
+					</div>
+				</div>
+				<form class="form-search layout__form-search">
+					<div class="form-search__wrap">
+						<input placeholder="Введите то что вы ищите...." class="field field_primary form-search__field" type="text" />
+						<button class="btn btn_primary btn_size_lg form-search__button">
+							<span class="btn__label">Search</span>
+						</button>
+					</div>
+				</form>
+				<div class="layout__content">
+					<div class="row">
+						<div class="col-12 col-lg-8">
+							<div class="entitled-group">
+								<div class="entitled-group__controls">
+									<span class="entitled-group__title">New Groups</span>
+								</div>
+								<div class="news-group entitled-group__wrap">
+									<div class="news-card news-group__item">
+										<img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation" />
+										<div class="news-card__content">
+											<span class="news-card__title">Groups Posts</span>
+											<span class="news-card__subtitle">Groups themes</span>
+											<span class="label label_default news-card__label">Travel</span>
+											<span class="news-card__events">Events
+												<span class="news-card__count">
+													<span class="news-card__count-in">3</span>
+													<span class="icon icon_men"></span>
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="news-card news-group__item">
+										<img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation" />
+										<div class="news-card__content">
+											<span class="news-card__title">Groups Posts</span>
+											<span class="news-card__subtitle">Groups themes</span>
+											<span class="label label_default news-card__label">Travel</span>
+											<span class="news-card__events">Events
+												<span class="news-card__count">
+													<span class="news-card__count-in">3</span>
+													<span class="icon icon_men"></span>
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="news-card news-group__item">
+										<img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation" />
+										<div class="news-card__content">
+											<span class="news-card__title">Groups Posts</span>
+											<span class="news-card__subtitle">Groups themes</span>
+											<span class="label label_default news-card__label">Travel</span>
+											<span class="news-card__events">Events
+												<span class="news-card__count">
+													<span class="news-card__count-in">3</span>
+													<span class="icon icon_men"></span>
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="news-card news-group__item">
+										<img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation" />
+										<div class="news-card__content">
+											<span class="news-card__title">Groups Posts</span>
+											<span class="news-card__subtitle">Groups themes</span>
+											<span class="label label_default news-card__label">Travel</span>
+											<span class="news-card__events">Events
+												<span class="news-card__count">
+													<span class="news-card__count-in">3</span>
+													<span class="icon icon_men"></span>
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="news-card news-group__item">
+										<img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation" />
+										<div class="news-card__content">
+											<span class="news-card__title">Groups Posts</span>
+											<span class="news-card__subtitle">Groups themes</span>
+											<span class="label label_default news-card__label">Travel</span>
+											<span class="news-card__events">Events
+												<span class="news-card__count">
+													<span class="news-card__count-in">3</span>
+													<span class="icon icon_men"></span>
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="news-card news-group__item">
+										<img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation" />
+										<div class="news-card__content">
+											<span class="news-card__title">Groups Posts</span>
+											<span class="news-card__subtitle">Groups themes</span>
+											<span class="label label_default news-card__label">Travel</span>
+											<span class="news-card__events">Events
+												<span class="news-card__count">
+													<span class="news-card__count-in">3</span>
+													<span class="icon icon_men"></span>
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="news-card news-group__item">
+										<img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation" />
+										<div class="news-card__content">
+											<span class="news-card__title">Groups Posts</span>
+											<span class="news-card__subtitle">Groups themes</span>
+											<span class="label label_default news-card__label">Travel</span>
+											<span class="news-card__events">Events
+												<span class="news-card__count">
+													<span class="news-card__count-in">3</span>
+													<span class="icon icon_men"></span>
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="news-card news-group__item">
+										<img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation" />
+										<div class="news-card__content">
+											<span class="news-card__title">Groups Posts</span>
+											<span class="news-card__subtitle">Groups themes</span>
+											<span class="label label_default news-card__label">Travel</span>
+											<span class="news-card__events">Events
+												<span class="news-card__count">
+													<span class="news-card__count-in">3</span>
+													<span class="icon icon_men"></span>
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="news-card news-group__item">
+										<img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation" />
+										<div class="news-card__content">
+											<span class="news-card__title">Groups Posts</span>
+											<span class="news-card__subtitle">Groups themes</span>
+											<span class="label label_default news-card__label">Travel</span>
+											<span class="news-card__events">Events
+												<span class="news-card__count">
+													<span class="news-card__count-in">3</span>
+													<span class="icon icon_men"></span>
+												</span>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
+							<br>
+							<br>
+							<br>
+							<a href="inner.html" class="link">Страница с текстом</a>
+						</div>
+						<div class="col-12 col-lg-4">
+							<div class="entitled-group">
+								<div class="entitled-group__controls">
+									<span class="entitled-group__title">Portal News</span>
+								</div>
+								<div id="slider-aside" class="entitled-group__wrap slick slick_btn-pos_out-top-right">
+									<div>
+										<div class="card card_horizontal">
+											<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+											<div class="card__content">
+												<span class="card__title">AFA - Armenian for ALL</span>
+												<div class="card__desc card__desc_limit card__desc_limit_lg">
+													<p>The courses are reserved for the members of the Nationsorg association.</p>
+													<p>(The annual fee is 50€)</p>
+												</div>
+												<div class="card__controls">
+													<a class="btn btn_default btn_size_md" href="#">
+														<span class="btn__label">Read...</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="card card_horizontal">
+											<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+											<div class="card__content">
+												<span class="card__title">AFA - Armenian for ALL</span>
+												<div class="card__desc card__desc_limit card__desc_limit_lg">
+													<p>The courses are reserved for the members of the Nationsorg association.</p>
+													<p>(The annual fee is 50€)</p>
+												</div>
+												<div class="card__controls">
+													<a class="btn btn_default btn_size_md" href="#">
+														<span class="btn__label">Read...</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="card card_horizontal">
+											<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+											<div class="card__content">
+												<span class="card__title">AFA - Armenian for ALL</span>
+												<div class="card__desc card__desc_limit card__desc_limit_lg">
+													<p>The courses are reserved for the members of the Nationsorg association.</p>
+													<p>(The annual fee is 50€)</p>
+												</div>
+												<div class="card__controls">
+													<a class="btn btn_default btn_size_md" href="#">
+														<span class="btn__label">Read...</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="card card_horizontal">
+											<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+											<div class="card__content">
+												<span class="card__title">AFA - Armenian for ALL</span>
+												<div class="card__desc card__desc_limit card__desc_limit_lg">
+													<p>The courses are reserved for the members of the Nationsorg association.</p>
+													<p>(The annual fee is 50€)</p>
+												</div>
+												<div class="card__controls">
+													<a class="btn btn_default btn_size_md" href="#">
+														<span class="btn__label">Read...</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="card card_horizontal">
+											<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+											<div class="card__content">
+												<span class="card__title">AFA - Armenian for ALL</span>
+												<div class="card__desc card__desc_limit card__desc_limit_lg">
+													<p>The courses are reserved for the members of the Nationsorg association.</p>
+													<p>(The annual fee is 50€)</p>
+												</div>
+												<div class="card__controls">
+													<a class="btn btn_default btn_size_md" href="#">
+														<span class="btn__label">Read...</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="card card_horizontal">
+											<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+											<div class="card__content">
+												<span class="card__title">AFA - Armenian for ALL</span>
+												<div class="card__desc card__desc_limit card__desc_limit_lg">
+													<p>The courses are reserved for the members of the Nationsorg association.</p>
+													<p>(The annual fee is 50€)</p>
+												</div>
+												<div class="card__controls">
+													<a class="btn btn_default btn_size_md" href="#">
+														<span class="btn__label">Read...</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="card card_horizontal">
+											<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+											<div class="card__content">
+												<span class="card__title">AFA - Armenian for ALL</span>
+												<div class="card__desc card__desc_limit card__desc_limit_lg">
+													<p>The courses are reserved for the members of the Nationsorg association.</p>
+													<p>(The annual fee is 50€)</p>
+												</div>
+												<div class="card__controls">
+													<a class="btn btn_default btn_size_md" href="#">
+														<span class="btn__label">Read...</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="card card_horizontal">
+											<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+											<div class="card__content">
+												<span class="card__title">AFA - Armenian for ALL</span>
+												<div class="card__desc card__desc_limit card__desc_limit_lg">
+													<p>The courses are reserved for the members of the Nationsorg association.</p>
+													<p>(The annual fee is 50€)</p>
+												</div>
+												<div class="card__controls">
+													<a class="btn btn_default btn_size_md" href="#">
+														<span class="btn__label">Read...</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="card card_horizontal">
+											<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+											<div class="card__content">
+												<span class="card__title">AFA - Armenian for ALL</span>
+												<div class="card__desc card__desc_limit card__desc_limit_lg">
+													<p>The courses are reserved for the members of the Nationsorg association.</p>
+													<p>(The annual fee is 50€)</p>
+												</div>
+												<div class="card__controls">
+													<a class="btn btn_default btn_size_md" href="#">
+														<span class="btn__label">Read...</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="card card_horizontal">
+											<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+											<div class="card__content">
+												<span class="card__title">AFA - Armenian for ALL</span>
+												<div class="card__desc card__desc_limit card__desc_limit_lg">
+													<p>The courses are reserved for the members of the Nationsorg association.</p>
+													<p>(The annual fee is 50€)</p>
+												</div>
+												<div class="card__controls">
+													<a class="btn btn_default btn_size_md" href="#">
+														<span class="btn__label">Read...</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="card card_horizontal">
+											<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+											<div class="card__content">
+												<span class="card__title">AFA - Armenian for ALL</span>
+												<div class="card__desc card__desc_limit card__desc_limit_lg">
+													<p>The courses are reserved for the members of the Nationsorg association.</p>
+													<p>(The annual fee is 50€)</p>
+												</div>
+												<div class="card__controls">
+													<a class="btn btn_default btn_size_md" href="#">
+														<span class="btn__label">Read...</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="card card_horizontal">
+											<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+											<div class="card__content">
+												<span class="card__title">AFA - Armenian for ALL</span>
+												<div class="card__desc card__desc_limit card__desc_limit_lg">
+													<p>The courses are reserved for the members of the Nationsorg association.</p>
+													<p>(The annual fee is 50€)</p>
+												</div>
+												<div class="card__controls">
+													<a class="btn btn_default btn_size_md" href="#">
+														<span class="btn__label">Read...</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="card card_horizontal">
+											<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+											<div class="card__content">
+												<span class="card__title">AFA - Armenian for ALL</span>
+												<div class="card__desc card__desc_limit card__desc_limit_lg">
+													<p>The courses are reserved for the members of the Nationsorg association.</p>
+													<p>(The annual fee is 50€)</p>
+												</div>
+												<div class="card__controls">
+													<a class="btn btn_default btn_size_md" href="#">
+														<span class="btn__label">Read...</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="card card_horizontal">
+											<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+											<div class="card__content">
+												<span class="card__title">AFA - Armenian for ALL</span>
+												<div class="card__desc card__desc_limit card__desc_limit_lg">
+													<p>The courses are reserved for the members of the Nationsorg association.</p>
+													<p>(The annual fee is 50€)</p>
+												</div>
+												<div class="card__controls">
+													<a class="btn btn_default btn_size_md" href="#">
+														<span class="btn__label">Read...</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="card card_horizontal">
+											<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+											<div class="card__content">
+												<span class="card__title">AFA - Armenian for ALL</span>
+												<div class="card__desc card__desc_limit card__desc_limit_lg">
+													<p>The courses are reserved for the members of the Nationsorg association.</p>
+													<p>(The annual fee is 50€)</p>
+												</div>
+												<div class="card__controls">
+													<a class="btn btn_default btn_size_md" href="#">
+														<span class="btn__label">Read...</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="card card_horizontal">
+											<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+											<div class="card__content">
+												<span class="card__title">AFA - Armenian for ALL</span>
+												<div class="card__desc card__desc_limit card__desc_limit_lg">
+													<p>The courses are reserved for the members of the Nationsorg association.</p>
+													<p>(The annual fee is 50€)</p>
+												</div>
+												<div class="card__controls">
+													<a class="btn btn_default btn_size_md" href="#">
+														<span class="btn__label">Read...</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="card card_horizontal">
+											<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+											<div class="card__content">
+												<span class="card__title">AFA - Armenian for ALL</span>
+												<div class="card__desc card__desc_limit card__desc_limit_lg">
+													<p>The courses are reserved for the members of the Nationsorg association.</p>
+													<p>(The annual fee is 50€)</p>
+												</div>
+												<div class="card__controls">
+													<a class="btn btn_default btn_size_md" href="#">
+														<span class="btn__label">Read...</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="card card_horizontal">
+											<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+											<div class="card__content">
+												<span class="card__title">AFA - Armenian for ALL</span>
+												<div class="card__desc card__desc_limit card__desc_limit_lg">
+													<p>The courses are reserved for the members of the Nationsorg association.</p>
+													<p>(The annual fee is 50€)</p>
+												</div>
+												<div class="card__controls">
+													<a class="btn btn_default btn_size_md" href="#">
+														<span class="btn__label">Read...</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="card card_horizontal">
+											<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+											<div class="card__content">
+												<span class="card__title">AFA - Armenian for ALL</span>
+												<div class="card__desc card__desc_limit card__desc_limit_lg">
+													<p>The courses are reserved for the members of the Nationsorg association.</p>
+													<p>(The annual fee is 50€)</p>
+												</div>
+												<div class="card__controls">
+													<a class="btn btn_default btn_size_md" href="#">
+														<span class="btn__label">Read...</span>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="card card_horizontal">
+											<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+											<div class="card__content">
+												<span class="card__title">AFA - Armenian for ALL</span>
+												<div class="card__desc card__desc_limit card__desc_limit_lg">
+													<p>The courses are reserved for the members of the Nationsorg association.</p>
+													<p>(The annual fee is 50€)</p>
+												</div>
+												<div class="card__controls">
+													<a class="btn btn_default btn_size_md" href="#">
+														<span class="btn__label">Read...</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="entitled-group">
+					<div class="entitled-group__controls">
+						<span class="entitled-group__title">city News</span>
+						<a class="btn btn_default btn_size_md" href="#">
+							<span class="btn__label">Show all news</span>
+						</a>
+					</div>
+					<div id="slider-main" class="entitled-group__wrap slick slick_btn-pos_out-top-right">
+						<div class="card">
+							<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+							<div class="card__content">
+								<span class="card__title">Direct link per category</span>
+								<span class="card__data">19/10/2017</span>
+								<div class="card__desc card__desc_limit card__desc_limit_sm">
+									<p>The courses are reserved for the members of the Nationsorg association.</p>
+								</div>
+								<div class="card__controls">
+									<a class="btn btn_default btn_size_md" href="#">
+										<span class="btn__label">Read...</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+							<div class="card__content">
+								<span class="card__title">Direct link per category</span>
+								<span class="card__data">19/10/2017</span>
+								<div class="card__desc card__desc_limit card__desc_limit_sm">
+									<p>The courses are reserved for the members of the Nationsorg association.</p>
+								</div>
+								<div class="card__controls">
+									<a class="btn btn_default btn_size_md" href="#">
+										<span class="btn__label">Read...</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+							<div class="card__content">
+								<span class="card__title">Direct link per category</span>
+								<span class="card__data">19/10/2017</span>
+								<div class="card__desc card__desc_limit card__desc_limit_sm">
+									<p>The courses are reserved for the members of the Nationsorg association.</p>
+								</div>
+								<div class="card__controls">
+									<a class="btn btn_default btn_size_md" href="#">
+										<span class="btn__label">Read...</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+							<div class="card__content">
+								<span class="card__title">Direct link per category</span>
+								<span class="card__data">19/10/2017</span>
+								<div class="card__desc card__desc_limit card__desc_limit_sm">
+									<p>The courses are reserved for the members of the Nationsorg association.</p>
+								</div>
+								<div class="card__controls">
+									<a class="btn btn_default btn_size_md" href="#">
+										<span class="btn__label">Read...</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+							<div class="card__content">
+								<span class="card__title">Direct link per category</span>
+								<span class="card__data">19/10/2017</span>
+								<div class="card__desc card__desc_limit card__desc_limit_sm">
+									<p>The courses are reserved for the members of the Nationsorg association.</p>
+								</div>
+								<div class="card__controls">
+									<a class="btn btn_default btn_size_md" href="#">
+										<span class="btn__label">Read...</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+							<div class="card__content">
+								<span class="card__title">Direct link per category</span>
+								<span class="card__data">19/10/2017</span>
+								<div class="card__desc card__desc_limit card__desc_limit_sm">
+									<p>The courses are reserved for the members of the Nationsorg association.</p>
+								</div>
+								<div class="card__controls">
+									<a class="btn btn_default btn_size_md" href="#">
+										<span class="btn__label">Read...</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+							<div class="card__content">
+								<span class="card__title">Direct link per category</span>
+								<span class="card__data">19/10/2017</span>
+								<div class="card__desc card__desc_limit card__desc_limit_sm">
+									<p>The courses are reserved for the members of the Nationsorg association.</p>
+								</div>
+								<div class="card__controls">
+									<a class="btn btn_default btn_size_md" href="#">
+										<span class="btn__label">Read...</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+							<div class="card__content">
+								<span class="card__title">Direct link per category</span>
+								<span class="card__data">19/10/2017</span>
+								<div class="card__desc card__desc_limit card__desc_limit_sm">
+									<p>The courses are reserved for the members of the Nationsorg association.</p>
+								</div>
+								<div class="card__controls">
+									<a class="btn btn_default btn_size_md" href="#">
+										<span class="btn__label">Read...</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+							<div class="card__content">
+								<span class="card__title">Direct link per category</span>
+								<span class="card__data">19/10/2017</span>
+								<div class="card__desc card__desc_limit card__desc_limit_sm">
+									<p>The courses are reserved for the members of the Nationsorg association.</p>
+								</div>
+								<div class="card__controls">
+									<a class="btn btn_default btn_size_md" href="#">
+										<span class="btn__label">Read...</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<img src="./assets/images/2321.png" class="card__image" alt="" role="presentation" />
+							<div class="card__content">
+								<span class="card__title">Direct link per category</span>
+								<span class="card__data">19/10/2017</span>
+								<div class="card__desc card__desc_limit card__desc_limit_sm">
+									<p>The courses are reserved for the members of the Nationsorg association.</p>
+								</div>
+								<div class="card__controls">
+									<a class="btn btn_default btn_size_md" href="#">
+										<span class="btn__label">Read...</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer footer">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-md-6">
+						<form class="form-subscribe">
+							<span class="form-subscribe__title">Subscribe to our mailing list</span>
+							<div class="form-subscribe__wrap">
+								<input placeholder="Email address" class="field field_primary form-subscribe__field" type="email" />
+								<button class="btn btn_primary btn_size_md form-subscribe__button">
+									<span class="btn__label">Subscribe</span>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<nav class="nav-main">
+				<div class="nav-main__wrap container">
+					<a href="#" class="nav-main__link is-active">
+						<span class="nav-main__label">Home</span>
+					</a>
+					<a href="#" class="nav-main__link">
+						<span class="nav-main__label">Language courses</span>
+					</a>
+					<a href="#" class="nav-main__link">
+						<span class="nav-main__label">Groups</span>
+					</a>
+					<a href="#" class="nav-main__link">
+						<span class="nav-main__label">Events</span>
+					</a>
+					<a href="#" class="nav-main__link">
+						<span class="nav-main__label">Forum</span>
+					</a>
+					<a href="#" class="nav-main__link">
+						<span class="nav-main__label">Partners</span>
+					</a>
+				</div>
+			</nav>
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12 col-lg-3 order-2 order-lg-first">
+						<p class="copyright">© Nationsorg 2017</p>
+					</div>
+					<div class="col-12 col-lg-9 order-1">
+						<nav class="nav-footer">
+							<a href="#" class="nav-footer__link">
+								<span class="nav-footer__label">About Us</span>
+							</a>
+							<a href="#" class="nav-footer__link is-active">
+								<span class="nav-footer__label">About Project</span>
+							</a>
+							<a href="#" class="nav-footer__link">
+								<span class="nav-footer__label">Franchising</span>
+							</a>
+							<a href="#" class="nav-footer__link">
+								<span class="nav-footer__label">Wish Wall</span>
+							</a>
+							<a href="#" class="nav-footer__link">
+								<span class="nav-footer__label">CGU</span>
+							</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="fixed-aside">
+			<div class="slideout fixed-aside__item">
+				<div class="slideout__btn slideout__btn_primary">
+					<span class="slideout__btn-label">An error in the text?</span>
+				</div>
+				<div class="slideout__wrap">
+					<form class="slideout__content slideout__content_center">
+						<p>Something edit</p>
+						<textarea placeholder="Email address" class="field field_area" required="required"></textarea>
+						<button class="btn btn_primary btn_size_md slideout__button">
+							<span class="btn__label">Enter</span>
+						</button>
+						<!--+b('ul').key-comb-->
+						<!--	+e('li').item-->
+						<!--		+btn('button', 'CTRL')._default._size_md-->
+						<!--	+e('li').item-->
+						<!--		+btn('button', 'ENTER')._default._size_md-->
+					</form>
+				</div>
+			</div>
+			<div class="slideout fixed-aside__item">
+				<div class="slideout__btn slideout__btn_secondary">
+					<span class="slideout__btn-label">Subscribe to our mailing list</span>
+				</div>
+				<div class="slideout__wrap">
+					<form class="slideout__content slideout__content_center">
+						<p>Subscribe to our mailing list</p>
+						<input placeholder="Email address" class="field" type="email" required="required"
+						/>
+						<button class="btn btn_primary btn_size_md slideout__button">
+							<span class="btn__label">Subscribe</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
