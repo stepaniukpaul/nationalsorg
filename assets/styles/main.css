@@ -8,78 +8,78 @@
 
 @font-face {
     font-family: HelveticaNeueCyr;
-    src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Thin.eot);
-    src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Thin.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Thin.woff2) format("woff2"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Thin.woff) format("woff"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Thin.ttf) format("truetype"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Thin.svg#HelveticaNeueCyr-Thin) format("svg");
+    src: url(../fonts/Helvetica/HelveticaNeueCyr-Thin.eot);
+    src: url(../fonts/Helvetica/HelveticaNeueCyr-Thin.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Thin.woff2) format("woff2"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Thin.woff) format("woff"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Thin.ttf) format("truetype"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Thin.svg#HelveticaNeueCyr-Thin) format("svg");
     font-weight: 100;
     font-style: normal;
 }
 @font-face {
     font-family: HelveticaNeueCyr;
-    src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-UltraLight.eot);
-    src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-UltraLight.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-UltraLight.woff2) format("woff2"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-UltraLight.woff) format("woff"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-UltraLight.ttf) format("truetype"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-UltraLight.svg#HelveticaNeueCyr-UltraLight) format("svg");
+    src: url(../fonts/Helvetica/HelveticaNeueCyr-UltraLight.eot);
+    src: url(../fonts/Helvetica/HelveticaNeueCyr-UltraLight.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-UltraLight.woff2) format("woff2"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-UltraLight.woff) format("woff"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-UltraLight.ttf) format("truetype"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-UltraLight.svg#HelveticaNeueCyr-UltraLight) format("svg");
     font-weight: 200;
     font-style: normal;
 }
 @font-face {
     font-family: HelveticaNeueCyr;
-    src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot);
-    src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.woff2) format("woff2"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.woff) format("woff"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.ttf) format("truetype"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.svg#HelveticaNeueCyr-Light) format("svg");
+    src: url(../fonts/Helvetica/HelveticaNeueCyr-Light.eot);
+    src: url(../fonts/Helvetica/HelveticaNeueCyr-Light.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Light.woff2) format("woff2"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Light.woff) format("woff"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Light.ttf) format("truetype"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Light.svg#HelveticaNeueCyr-Light) format("svg");
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: HelveticaNeueCyr;
-    src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.eot);
-    src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff2) format("woff2"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff) format("woff"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.ttf) format("truetype"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.svg#HelveticaNeueCyr-Roman) format("svg");
+    src: url(../fonts/Helvetica/HelveticaNeueCyr-Roman.eot);
+    src: url(../fonts/Helvetica/HelveticaNeueCyr-Roman.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Roman.woff2) format("woff2"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Roman.woff) format("woff"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Roman.ttf) format("truetype"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Roman.svg#HelveticaNeueCyr-Roman) format("svg");
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: HelveticaNeueCyr;
-    src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.eot);
-    src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.woff2) format("woff2"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.woff) format("woff"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.ttf) format("truetype"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.svg#HelveticaNeueCyr-Medium) format("svg");
+    src: url(../fonts/Helvetica/HelveticaNeueCyr-Medium.eot);
+    src: url(../fonts/Helvetica/HelveticaNeueCyr-Medium.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Medium.woff2) format("woff2"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Medium.woff) format("woff"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Medium.ttf) format("truetype"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Medium.svg#HelveticaNeueCyr-Medium) format("svg");
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: HelveticaNeueCyr;
-    src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.eot);
-    src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.woff2) format("woff2"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.woff) format("woff"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.ttf) format("truetype"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.svg#HelveticaNeueCyr-Bold) format("svg");
+    src: url(../fonts/Helvetica/HelveticaNeueCyr-Bold.eot);
+    src: url(../fonts/Helvetica/HelveticaNeueCyr-Bold.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Bold.woff2) format("woff2"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Bold.woff) format("woff"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Bold.ttf) format("truetype"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Bold.svg#HelveticaNeueCyr-Bold) format("svg");
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: HelveticaNeueCyr;
-    src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Black.eot);
-    src: url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Black.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Black.woff2) format("woff2"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Black.woff) format("woff"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Black.ttf) format("truetype"),
-    url(../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Black.svg#HelveticaNeueCyr-Black) format("svg");
+    src: url(../fonts/Helvetica/HelveticaNeueCyr-Black.eot);
+    src: url(../fonts/Helvetica/HelveticaNeueCyr-Black.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Black.woff2) format("woff2"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Black.woff) format("woff"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Black.ttf) format("truetype"),
+    url(../fonts/Helvetica/HelveticaNeueCyr-Black.svg#HelveticaNeueCyr-Black) format("svg");
     font-weight: 900;
     font-style: normal;
 }
@@ -236,7 +236,7 @@ table {
 
 
 html {
-    /*font-family: HelveticaNeueCyr, sans-serif;*/
+    /*font-family: Helvetica, sans-serif;*/
     font-size: 14px;
     font-weight: 300;
 }
@@ -555,19 +555,29 @@ h1, h2, h3, h4, h5, h6, span, p{
 }
 .card_horizontal .card__content {
     margin-left: 15px;
+    max-width: 55%;
 }
 .card_horizontal .card__image {
-    max-width: 40%}
+    max-width: 40%
+}
 .card__image {
     margin: 0 auto;
     display: block;
-    max-width: 100%}
+    max-width: 100%
+}
+
+.card__image img{
+    width: 100%;
+}
 .card__title {
     margin: 14px 0;
     display: block;
     font-size: 16px;
     font-weight: 400;
     color: #1d1d1e;
+}
+.card__title:hover{
+    color: #787878;
 }
 .card__data {
     margin-bottom: 17px;
@@ -943,6 +953,9 @@ h1, h2, h3, h4, h5, h6, span, p{
     font-weight: 400;
     text-transform: uppercase;
 }
+.news-card__title:hover{
+    color: #787878;
+}
 .news-card__subtitle {
     margin-bottom: 5px;
     display: block;
@@ -950,6 +963,10 @@ h1, h2, h3, h4, h5, h6, span, p{
 .news-card__label {
     margin: 5px 0;
     display: inline-block;
+}
+.news-card__label:hover{
+    background-color: #1d1d1e;
+    color: #fff;
 }
 .news-card__events {
     display: block;
@@ -1137,7 +1154,6 @@ h1, h2, h3, h4, h5, h6, span, p{
 /* Footer start */
 
 .footer {
-    padding-top: 65px;
     padding-bottom: 35px;
     background-color: #f9f9f9;
     border-bottom: 8px solid #333;
@@ -1224,6 +1240,7 @@ h1, h2, h3, h4, h5, h6, span, p{
 
 .layout {
     display: block;
+    padding-bottom: 65px;
 }
 
 .m-menu {
