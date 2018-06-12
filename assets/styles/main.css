@@ -84,6 +84,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: FontAwesome;
+    src: url(../fonts/FontAwesome/fa-solid-900.eot);
+    src: url(../fonts/FontAwesome/fa-solid-900.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/FontAwesome/fa-solid-900.woff2) format("woff2"),
+    url(../fonts/FontAwesome/fa-solid-900.woff) format("woff"),
+    url(../fonts/FontAwesome/fa-solid-900.ttf) format("truetype"),
+    url(../fonts/FontAwesome/fa-solid-900.svg#HelveticaNeueCyr-Black) format("svg");
+    font-weight: 900;
+    font-style: normal;
+}
 /* Fonts end */
 
 
@@ -1780,14 +1791,107 @@ a {
 
 /* Events */
 
-.banner__event {
+.event__banner {
     margin-bottom: 30px;
-    padding: 48px;
+    padding: 48px 23px 23px 48px;
     min-height: 280px;
+    display: block;
 }
 
-.banner__wrap {
-    margin: auto;
+.event__banner .layout__title {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 28px;
 }
 
+.event__banner p {
+    font-size: 16px;
+    color: #fff;
+    width: 580px;
+    margin-bottom: 35px;
+}
+
+.event__buttons {
+    width: 300px;
+    margin-left: 55px;
+}
+
+.event__details .layout__title {
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.event__details .event__item {
+    padding-left: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.event__item i {
+    color: #d1d1d1;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.event__btn {
+    min-width: 150px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0;
+    border: none;
+}
+
+.event__text {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.event__buttons {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.event__buttons>a {
+    width: 100%;
+    border-radius: 0;
+}
+
+.event__buttons>a:first-child {
+    background-color: #36c61e;
+}
+
+.event__buttons>a:nth-child(2) {
+    background-color: #ff9600;
+}
+
+.event__buttons>a:last-child {
+    background-color: #fff;
+    color: #898989;
+    border: 1px solid #898989;
+}
+
+
+
+
+
+
+
+.color-gray {
+     color: #bababa;
+ }
+
+
+
+/*.event__details ul li:before {*/
+    /*content: "\f017";*/
+    /*font-family: FontAwesome;*/
+    /*left: 15px;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*color: #d1d1d1;*/
+    /*font-size: 18px;*/
+/*}*/
 /* Events end */

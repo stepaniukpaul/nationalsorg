@@ -10,10 +10,13 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <link href="./assets/styles/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/styles/Bootstrap/bootstrap-grid.min.css" rel="stylesheet">
     <link href="./assets/styles/Slick/slick.css" rel="stylesheet">
     <link href="./assets/styles/Slick/slick-theme.css" rel="stylesheet">
     <link href="./assets/styles/main.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/solid.css" integrity="sha384-Rw5qeepMFvJVEZdSo1nDQD5B6wX0m7c5Z/pLNvjkB14W6Yki1hKbSEQaX9ffUbWe" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/fontawesome.css" integrity="sha384-GVa9GOgVQgOk+TNYXu7S/InPTfSDTtBalSgkgqQ7sCik56N9ztlkoTr2f/T44oKV" crossorigin="anonymous">
 
     <script src="./assets/scripts/jQuery/jquery-3.3.1.min.js"></script>
     <script src="./assets/scripts/Slick/slick.min.js"></script>
@@ -184,18 +187,102 @@
             </li>
         </ul>
         <div class="layout__content">
-            <div style="background-image: url(./assets/images/temp/bg.jpg);" class="banner banner__event">
-                <div class="banner__wrap">
-                    <h3 class="layout__title">Event</h3>
+            <div style="background-image: url(./assets/images/2321.png);" class="banner event__banner">
+                <h3 class="layout__title">Event</h3>
+                <div class="d-flex justify-content-between align-items-end">
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                     </p>
-                    <a class="btn btn_accent btn_size_lg ml-auto">
-                        <span class="btn__label">See more</span>
+                    <a class="btn btn_accent event__btn">
+                        <span class="btn__label">Join</span>
                     </a>
                 </div>
             </div>
-
+            <div class="event__media d-flex justify-content-between">
+                <div class="media__like">
+                    <a class="btn btn_default">
+                        <span class="btn__label">Settings</span>
+                    </a>
+                    <span>10</span>
+                    <i class="fas fa-like"></i>
+                </div>
+                <div class="d-flex">
+                    <div class="event__pluso">
+                        <script type="text/javascript">(function() {
+                            if (window.pluso)if (typeof window.pluso.start == "function") return;
+                            if (window.ifpluso==undefined) { window.ifpluso = 1;
+                                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                                s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                                s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                                var h=d[g]('body')[0];
+                                h.appendChild(s);
+                            }})();</script>
+                        <div class="pluso" data-background="transparent" data-options="small,round,line,horizontal,counter,theme=04" data-services="google,vkontakte,linkedin,twitter,facebook"></div>
+                    </div>
+                    <div class="event__buttons d-flex">
+                        <a class="btn btn_accent">
+                            <span class="btn__label">Settings</span>
+                        </a>
+                        <a class="btn btn_accent">
+                            <span class="btn__label">Settings</span>
+                        </a>
+                        <a class="btn btn_accent">
+                            <span class="btn__label">Settings</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="event__details">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="layout__title">Detalis</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                        <a class="btn btn_accent event__btn">
+                            <span class="btn__label">Settings</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5">
+                        <ul>
+                            <li class="d-flex event__item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <span class="event__text">
+                                        Set, Mar 24 at 13:30 - San, Mar 25 at 18:30
+                                    </span>
+                                    <span class="event__text">
+                                        GMT+01:00
+                                    </span>
+                                    <span class="event__text color-gray">
+                                        This week
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="d-flex event__item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <span class="event__text">
+                                        6 going
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="d-flex event__item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <span class="event__text">
+                                        Espace ozaman
+                                    </span>
+                                    <span class="event__text color-gray">
+                                        12 rue de I’Alma, 69001 Lyon, France
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
