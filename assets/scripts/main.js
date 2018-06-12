@@ -122,5 +122,27 @@ $(document).ready(function () {
             }
         ]
     });
-
+            //Tabs
+    function openCity(evt, formName) {
+        var i, tabcontent, tablinks;
+        tabcontent = $(".tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = $(".tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active","");
+        }
+        document.getElementById(formName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    $('.login_form').click(function () {
+        openCity(event,'Login');
+    });
+    $('.register_form').click(function () {
+        openCity(event,'Register')
+    });
+    $(document).ready(function () {
+        $('.register_form').click();
+    });
 });
