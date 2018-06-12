@@ -1768,3 +1768,16 @@ h1, h2, h3, h4, h5, h6, span, p{
 
 /* Main end */
 
+/* Events */
+
+.banner__event {
+    margin-bottom: 30px;
+    padding: 48px;
+    min-height: 280px;
+}
+
+.banner__wrap {
+    margin: auto;
+}
+
+/* Events end */
