@@ -251,48 +251,8 @@ a {
     color: inherit;
 }
 
-/* Bootstrap reset */
 
-.btn:focus{
-    outline: none;
-    box-shadow: none;
-}
-a.btn:not([href]):not([tabindex]) {
-    color: #fff;
-    text-decoration: none;
-}
-a.btn:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
-    color: #fff;
-    text-decoration: none;
-}
-.card{
-    flex-direction: row;
-    border: none;
-}
 
-dl, ol, ul, p{
-    margin-bottom: 0;
-}
-
-img{
-    vertical-align: inherit;
-}
-
-h1, h2, h3, h4, h5, h6, span, p{
-    font-weight: 300;
-}
-
-@media (min-width: 1290px){
-    .container {
-        max-width: 1230px;
-    }
-}
-
-@media (min-width: 1200px){
-    .container {
-        width: auto;
-    }
-}
 
     /* Reset end */
 
@@ -374,40 +334,6 @@ h1, h2, h3, h4, h5, h6, span, p{
     color: hsla(0, 0%, 100%, .22);
 }
 
-@media only screen and (max-width:1289px){
-    .banner__label {
-        font-size: 160px;
-    }
-}
-
-@media only screen and (max-width:991px) {
-    .banner {
-        padding: 40px 50px;
-    }
-    .banner__label {
-        font-size: 140px;
-    }
-}
-
-@media only screen and (max-width:767px){
-    .banner {
-        padding: 30px;
-        min-height: 200px;
-    }
-    .banner__label {
-        font-size: 90px;
-    }
-}
-
-@media only screen and (max-width:575px){
-    .banner {
-        padding: 25px;
-        min-height: 200px;
-    }
-    .banner__label {
-        font-size: 48px;
-    }
-}
 
     /* Breadcrumbs */
 
@@ -602,18 +528,6 @@ h1, h2, h3, h4, h5, h6, span, p{
     text-align: right;
 }
 
-@media only screen and (max-width:575px){
-    .card_horizontal {
-        display: block;
-    }
-    .card_horizontal .card__content {
-        margin-left: 0;
-    }
-    .card_horizontal .card__image {
-        max-width: 100%
-    }
-}
-
 
 /* Copyright */
 
@@ -631,12 +545,6 @@ h1, h2, h3, h4, h5, h6, span, p{
     vertical-align: text-bottom;
 }
 
-@media only screen and (max-width:991px) {
-    .copyright {
-        margin-top: 10px;
-        text-align: center;
-    }
-}
 
 /* Dropdown */
 
@@ -858,15 +766,6 @@ h1, h2, h3, h4, h5, h6, span, p{
     transition: all .25s ease-in-out;
 }
 
-@media only screen and (max-width:767px){
-    .m-control {
-        position: fixed;
-        z-index: 100000;
-        top: 18px;
-        right: 18px;
-        display: block;
-    }
-}
 
 
 /* Titles in layout */
@@ -902,19 +801,6 @@ h1, h2, h3, h4, h5, h6, span, p{
     display: inline-block;
     font-size: 18px;
     text-transform: uppercase;
-}
-
-
-@media (max-width: 480px) {
-    .entitled-group__controls{
-        flex-wrap: wrap;
-    }
-    .entitled-group__controls > .btn{
-        margin-top: 10px;
-    }
-    .entitled-group__controls > span{
-        padding-right: 20px;
-    }
 }
 
 
@@ -1048,20 +934,6 @@ h1, h2, h3, h4, h5, h6, span, p{
     align-items: flex-end;
 }
 
-@media only screen and (max-width:1289px) {
-    .widgets {
-        margin-top: 15px;
-        -ms-flex-order: 2;
-        order: 2;
-    }
-}
-
-@media only screen and (max-width:767px) {
-    .widgets {
-        display: none;
-    }
-}
-
 
 /* Clock */
 
@@ -1185,23 +1057,6 @@ h1, h2, h3, h4, h5, h6, span, p{
     min-width: 105px;
 }
 
-@media only screen and (max-width:767px){
-    .form-subscribe__field {
-        min-width: inherit;
-    }
-}
-
-@media only screen and (max-width:575px) {
-    .form-subscribe__wrap {
-        display: block;
-        text-align: center;
-    }
-    .form-subscribe__button {
-        margin: 15px 0 0;
-        min-width: 190px;
-    }
-}
-
 /* Nav-bar-footer */
 
 .nav-footer {
@@ -1280,34 +1135,6 @@ h1, h2, h3, h4, h5, h6, span, p{
 .nav-main__label {
     margin: auto;
     text-align: center;
-}
-
-@media only screen and (max-width:767px){
-    .m-menu {
-        position: fixed;
-        z-index: 99999;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        overflow-y: scroll;
-        width: 80%;
-        min-width: 140px;
-        max-width: 440px;
-        background: #f8f8f8;
-    }
-    .m-menu, .nav-main {
-        display: none;
-    }
-    .nav-main_m-menu {
-        margin-bottom: 0;
-        display: block;
-        height: 100%}
-    .nav-main_m-menu .nav-main__wrap {
-        padding: 0;
-        display: block;
-    }
 }
 
 /* Nav in layout and footer end */
@@ -1580,13 +1407,156 @@ h1, h2, h3, h4, h5, h6, span, p{
     margin-bottom: 0;
 }
 
-@media only screen and (max-width:1289px){
+
+
+
+/* Aside right to blocks end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+    Pages
+
+*/
+
+
+/* Main start */
+
+
+/* Text in banner */
+.greeting {
+    margin-bottom: 40px;
+    display: block;
+    text-align: center;
+}
+.greeting__title {
+    font-size: 72px;
+    font-weight: 300;
+}
+.greeting__desc {
+    margin: 0 auto 10px;
+    display: table;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fb002f;
+}
+.greeting__desc span {
+    float: right;
+    font-weight: 300;
+    color: #d7d7d7;
+}
+
+
+/* Input form-search main */
+.form-search {
+    margin-bottom: 70px;
+    padding: 10px 13px;
+    display: block;
+    background: #fcfcfc;
+    background: linear-gradient(180deg, #fcfcfc 0, #f1f1f1);
+    border-radius: 5px;
+    box-shadow: 0 11px 18px rgba(66, 66, 66, .1);
+}
+.form-search__wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.form-search__field {
+    width: 100%}
+.form-search__button {
+    margin-left: 15px;
+    min-width: 190px;
+}
+
+
+
+/* Main end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+    Media
+
+ */
+
+@media (min-width: 1290px){
+    .container {
+        max-width: 1230px;
+    }
+}
+
+@media (max-width:1289px){
+
+    /* Banner */
+    .banner__label {
+        font-size: 160px;
+    }
+
+    /* Clock and wether wrapper */
+    .widgets {
+        margin-top: 15px;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    /* Aside right to blocks start */
     .fixed-aside__item {
         margin-bottom: 40px;
     }
 }
 
+@media (min-width: 1200px){
+    .container {
+        width: auto;
+    }
+}
+
 @media (max-width: 1024px){
+
+    /* Aside right to blocks start */
     .fixed-aside{
         right: -18px;
     }
@@ -1596,7 +1566,81 @@ h1, h2, h3, h4, h5, h6, span, p{
     }
 }
 
-@media only screen and (max-width:767px){
+@media (max-width:991px) {
+
+    /* Banner */
+    .banner {
+        padding: 40px 50px;
+    }
+    .banner__label {
+        font-size: 140px;
+    }
+
+    /* Copyright */
+    .copyright {
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width:767px){
+
+    /* Banner */
+    .banner {
+        padding: 30px;
+        min-height: 200px;
+    }
+    .banner__label {
+        font-size: 90px;
+    }
+
+    /* M-control */
+    .m-control {
+        position: fixed;
+        z-index: 100000;
+        top: 18px;
+        right: 18px;
+        display: block;
+    }
+
+    /* Clock and wether wrapper */
+    .widgets {
+        display: none;
+    }
+
+    /* Input form-subscribe footer */
+    .form-subscribe__field {
+        min-width: inherit;
+    }
+
+    /* Nav bar */
+    .m-menu {
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        overflow-y: scroll;
+        width: 80%;
+        min-width: 140px;
+        max-width: 440px;
+        background: #f8f8f8;
+    }
+    .m-menu, .nav-main {
+        display: none;
+    }
+    .nav-main_m-menu {
+        margin-bottom: 0;
+        display: block;
+        height: 100%}
+    .nav-main_m-menu .nav-main__wrap {
+        padding: 0;
+        display: block;
+    }
+
+    /* Aside right to blocks start */
     .slideout {
         display: block;
     }
@@ -1663,97 +1707,53 @@ h1, h2, h3, h4, h5, h6, span, p{
         min-width: 100%;
         transform: translateY(-280px);
     }
-}
 
 
 
-/* Aside right to blocks end */
+    /* Pages */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-    Pages
-
-*/
-
-
-/* Main start */
-
-
-/* Text in banner */
-.greeting {
-    margin-bottom: 40px;
-    display: block;
-    text-align: center;
-}
-.greeting__title {
-    font-size: 72px;
-    font-weight: 300;
-}
-.greeting__desc {
-    margin: 0 auto 10px;
-    display: table;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #fb002f;
-}
-.greeting__desc span {
-    float: right;
-    font-weight: 300;
-    color: #d7d7d7;
-}
-
-@media only screen and (max-width:767px){
+    /* Text in banner */
     .greeting__title {
         font-size: 36px;
     }
 }
 
-/* Input form-search main */
-.form-search {
-    margin-bottom: 70px;
-    padding: 10px 13px;
-    display: block;
-    background: #fcfcfc;
-    background: linear-gradient(180deg, #fcfcfc 0, #f1f1f1);
-    border-radius: 5px;
-    box-shadow: 0 11px 18px rgba(66, 66, 66, .1);
-}
-.form-search__wrap {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-.form-search__field {
-    width: 100%}
-.form-search__button {
-    margin-left: 15px;
-    min-width: 190px;
-}
+@media (max-width:575px){
 
-@media only screen and (max-width:575px){
+    /* Banner */
+    .banner {
+        padding: 25px;
+        min-height: 200px;
+    }
+    .banner__label {
+        font-size: 48px;
+    }
+
+    /* Card */
+    .card_horizontal {
+        display: block;
+    }
+    .card_horizontal .card__content {
+        margin-left: 0;
+    }
+    .card_horizontal .card__image {
+        max-width: 100%
+    }
+
+    /* Input form-subscribe footer */
+    .form-subscribe__wrap {
+        display: block;
+        text-align: center;
+    }
+    .form-subscribe__button {
+        margin: 15px 0 0;
+        min-width: 190px;
+    }
+
+    /* Pages */
+
+
+    /* Input form-search main */
     .form-search__wrap {
         display: block;
         text-align: center;
@@ -1764,9 +1764,19 @@ h1, h2, h3, h4, h5, h6, span, p{
     }
 }
 
+@media (max-width: 480px) {
 
-
-/* Main end */
+    /* Titles groups in layout */
+    .entitled-group__controls{
+        flex-wrap: wrap;
+    }
+    .entitled-group__controls > .btn{
+        margin-top: 10px;
+    }
+    .entitled-group__controls > span{
+        padding-right: 20px;
+    }
+}
 
 /* Events */
 
