@@ -1900,3 +1900,101 @@ a {
 
 
 /* Events end */
+
+/*Personal Settings*/
+.personal_setting_wrap{
+    display: flex;
+}
+.personal_photo_wrap{
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+}
+.profile_photo_info{
+    max-width: 310px;
+    max-height: 150px;
+    margin-bottom: 10px;
+}
+.profile_photo_info img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.profile_photo_actions label input{
+    width: 0px;
+    height: 0px;
+    position:absolute;
+    top: -1000000px;
+}
+.profile_photo_actions label{
+    cursor: pointer;
+    position: relative;
+    width: 100px;
+    height: 35px;
+    padding-left: 30px;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f5283b;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.profile_photo_actions label:before{
+    content: '\f07b';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+    font-weight: 700;
+}
+.personal_information{
+    max-width: 850px;
+    margin-right: 30px;
+    width: 100%;
+}
+.profile_photo_actions{
+    display: flex;
+    justify-content: space-between;
+}
+.profile_photo_actions button{
+    position: relative;
+    background-color: transparent;
+    color: #787878;
+    width: 100px;
+    height: 35px;
+    padding-left: 20px;
+    border: 1px solid #bababa;
+    border-radius: 5px;
+}
+.profile_photo_actions button.clear_photo_field:before{
+    content: '\f2ed';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    line-height: 14px;
+    color: #787878;
+    font-weight: 700;
+}
+.profile_photo_actions button.upload_photo-in:before{
+    content: '\f019';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    line-height: 14px;
+    color: #787878;
+    font-weight: 700;
+}
+
+/*Personal Settings Ebd*/
