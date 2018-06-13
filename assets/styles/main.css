@@ -84,17 +84,17 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: FontAwesome;
-    src: url(../fonts/FontAwesome/fa-solid-900.eot);
-    src: url(../fonts/FontAwesome/fa-solid-900.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/FontAwesome/fa-solid-900.woff2) format("woff2"),
-    url(../fonts/FontAwesome/fa-solid-900.woff) format("woff"),
-    url(../fonts/FontAwesome/fa-solid-900.ttf) format("truetype"),
-    url(../fonts/FontAwesome/fa-solid-900.svg#HelveticaNeueCyr-Black) format("svg");
-    font-weight: 900;
-    font-style: normal;
-}
+/*@font-face {*/
+    /*font-family: FontAwesome;*/
+    /*src: url(../fonts/FontAwesome/fa-solid-900.eot);*/
+    /*src: url(../fonts/FontAwesome/fa-solid-900.eot?#iefix) format("embedded-opentype"),*/
+    /*url(../fonts/FontAwesome/fa-solid-900.woff2) format("woff2"),*/
+    /*url(../fonts/FontAwesome/fa-solid-900.woff) format("woff"),*/
+    /*url(../fonts/FontAwesome/fa-solid-900.ttf) format("truetype"),*/
+    /*url(../fonts/FontAwesome/fa-solid-900.svg#HelveticaNeueCyr-Black) format("svg");*/
+    /*font-weight: 900;*/
+    /*font-style: normal;*/
+/*}*/
 /* Fonts end */
 
 
@@ -2011,13 +2011,18 @@ a {
 
 .event__details .layout__title {
     margin-bottom: 25px;
+    margin-top: 48px;
     font-size: 16px;
 }
 
 .event__details .event__item {
-    padding-left: 40px;
+    padding-left: 37px;
     margin-bottom: 30px;
     position: relative;
+}
+
+.event__details .event__item:last-child {
+    margin-bottom: 0;
 }
 
 .event__item i {
@@ -2034,10 +2039,6 @@ a {
     line-height: 45px;
     padding: 0;
     border: none;
-}
-
-.event__media {
-    margin-bottom: 48px;
 }
 
 .event__text {
@@ -2075,6 +2076,7 @@ a {
     background-color: #fff;
     color: #898989;
     border: 1px solid #898989;
+    border-left: none;
     border-radius: 0 5px 5px 0;
 }
 
@@ -2088,17 +2090,36 @@ a {
      color: #bababa;
  }
 
+@media only screen and (max-width : 991px){
+
+    .event__details ul {
+        margin-top: 40px;
+    }
+
+    .event__banner p {
+        max-width: 455px;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width : 767px){
+
+    .event__buttons {
+        margin-left: 0;
+    }
+
+    .event__details ul {
+        margin-top: 35px;
+    }
+
+    .event__pluso {
+        margin: 10px 0 25px;
+    }
+}
 
 
-/*.event__details ul li:before {*/
-    /*content: "\f017";*/
-    /*font-family: FontAwesome;*/
-    /*left: 15px;*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*color: #d1d1d1;*/
-    /*font-size: 18px;*/
-/*}*/
+
+
 /* Events end */
 
 

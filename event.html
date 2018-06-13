@@ -185,10 +185,13 @@
                 <span class="breadcrumbs__link breadcrumbs__link_static">Event</span>
             </li>
         </ul>
-        <div class="layout__content">
-            <div style="background-image: url(./assets/images/2321.png);" class="banner event__banner">
+    </div>
+    <div class="layout__content">
+        <div class="container">
+            <div class="event__banner" style="position: relative;">
+
                 <h3 class="layout__title">Event</h3>
-                <div class="d-flex justify-content-between align-items-end">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-end">
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                     </p>
@@ -196,8 +199,13 @@
                         <span class="btn__label">Join</span>
                     </a>
                 </div>
+                <div class="banner" style=" background: url(./assets/images/2321.png); position: absolute; top: 0; left: 0; z-index: -1; width: 100%;"></div>
             </div>
-            <div class="event__media d-flex justify-content-between">
+
+        </div>
+
+        <div class="container">
+            <div class="event__media d-md-flex justify-content-between">
                 <div class="media__like">
                     <a class="btn btn_default">
                         <span class="btn__label">Like</span>
@@ -205,17 +213,8 @@
                     <span>10</span>
                     <i class="far fa-thumbs-up"></i>
                 </div>
-                <div class="d-flex align-items-center">
+                <div class="d-flex flex-column flex-md-row align-items-md-center">
                     <div class="event__pluso">
-                        <script type="text/javascript">(function() {
-                            if (window.pluso)if (typeof window.pluso.start == "function") return;
-                            if (window.ifpluso==undefined) { window.ifpluso = 1;
-                                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
-                                s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
-                                s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
-                                var h=d[g]('body')[0];
-                                h.appendChild(s);
-                            }})();</script>
                         <div class="pluso" data-background="transparent" data-options="small,round,line,horizontal,counter,theme=04" data-services="google,vkontakte,linkedin,twitter,facebook"></div>
                     </div>
                     <div class="event__buttons d-flex">
@@ -233,7 +232,7 @@
             </div>
             <div class="event__details">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-12 col-md-10 col-lg-6 order-3 order-lg-1">
                         <h3 class="layout__title">Detalis</h3>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -242,8 +241,8 @@
                             <span class="btn__label">Settings</span>
                         </a>
                     </div>
-                    <div class="col-lg-1"></div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-1 order-2"></div>
+                    <div class="col-lg-5 order-1 order-lg-3">
                         <ul>
                             <li class="d-flex event__item">
                                 <i class="fas fa-clock"></i>
