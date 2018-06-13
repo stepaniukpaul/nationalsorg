@@ -1792,7 +1792,7 @@ a {
 /* Events */
 
 .event__banner {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     padding: 48px 23px 23px 48px;
     min-height: 280px;
     display: block;
@@ -1843,15 +1843,25 @@ a {
     border: none;
 }
 
+.event__media {
+    margin-bottom: 48px;
+}
+
 .event__text {
     display: block;
     font-size: 14px;
     line-height: 18px;
 }
 
-.event__buttons {
-    border-radius: 5px;
-    overflow: hidden;
+.media__like {
+    color: #bababa;
+    font-size: 16px;
+}
+
+.media__like>a {
+    color: #bababa;
+    border: 1px solid #898989;
+    margin-right: 10px;
 }
 
 .event__buttons>a {
@@ -1861,6 +1871,7 @@ a {
 
 .event__buttons>a:first-child {
     background-color: #36c61e;
+    border-radius: 5px 0 0 5px;
 }
 
 .event__buttons>a:nth-child(2) {
@@ -1871,6 +1882,7 @@ a {
     background-color: #fff;
     color: #898989;
     border: 1px solid #898989;
+    border-radius: 0 5px 5px 0;
 }
 
 
