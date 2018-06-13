@@ -259,14 +259,6 @@ a {
 
 /* Default styles start */
 
-.flex-container{
-    display: flex;
-}
-
-.align-center{
-    align-items: center;
-}
-
 /* Default styles end */
 
 
@@ -1577,17 +1569,12 @@ a {
     color: #bababa;
     margin-top: 2px;
 }
-.btn.btn_table{
+.forum .btn_table{
     margin-left: auto;
     background-color: #aeaeae;
-    color: #fff;
     height: 35px;
     line-height: 35px;
     min-width: 80px;
-}
-.btn.btn_table:hover{
-    color: #fff;
-    background-color: #1d1d1e;
 }
 /* Forum end */
 
