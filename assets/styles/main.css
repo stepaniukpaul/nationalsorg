@@ -1980,15 +1980,9 @@ a {
 .tab button.tablinks.activeTab{
     color: #1d1d1e;
 }
-@media only screen and (max-width : 1200px){}
-@media only screen and (max-width : 992px){}
-@media only screen and (max-width : 768px){}
-@media only screen and (max-width : 480px){
-    .container{
-        padding: 0 7px
-    }
-}
-@media only screen and (max-width : 320px){}
+
+
+/* Event */
 
 .event__banner {
     margin-bottom: 15px;
@@ -2106,3 +2100,19 @@ a {
     /*font-size: 18px;*/
 /*}*/
 /* Events end */
+
+
+
+
+
+/* Media */
+
+@media only screen and (max-width : 1200px){}
+@media only screen and (max-width : 992px){}
+@media only screen and (max-width : 768px){}
+@media only screen and (max-width : 480px){
+    .container{
+        padding: 0 7px
+    }
+}
+@media only screen and (max-width : 320px){}
