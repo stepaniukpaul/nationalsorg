@@ -1969,6 +1969,96 @@ a {
 .tab button.tablinks.activeTab{
     color: #1d1d1e;
 }
+/*Portal Events Start */
+.portal_news_wrap{
+    max-width: 1040px;
+    width: 100%;
+}
+.portal_news_wrap h4{
+    font-size: 18px;
+    color: #181818;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+.news_sort button.news_new-sort{
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    position: relative;
+    padding-left: 20px;
+    color: #0e83b5;
+    margin-right: 20px;
+    display: inline-block;
+    line-height: 24px;
+}
+.news_sort button:hover{
+    color: #1d1d1e;
+}
+.news_sort button:focus{
+    color: #3396c0;
+}
+.news_sort{
+    padding-bottom: 5px;
+}
+.news_sort button:before{
+    content: '\f062';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: "Font Awesome 5 Free";
+    font-size: 14px;
+    font-weight: 900;
+}
+.news_section .news_sort button.news_name-sort{
+    display: inline-block;
+    color: #bababa;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: transparent;
+    border: none;
+}
+.news_section .news_sort button.news_name-sort:before{
+    display: none;
+}
+.news_section .news_sort button.news_name-sort:hover{
+    color: #1d1d1e;
+}
+.news_section .news_sort button.news_name-sort:focus{
+    color: #3396c0;
+}
+.news_sort_counter{
+    display: flex;
+    margin-bottom: 35px;
+}
+.news_sort_counter > span{
+    padding-right: 7px;
+}
+.news_sort_counter{
+    font-size: 16px;
+    color: #787878;
+}
+.event_posts div span{
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #bababa;
+}
+.event_posts div p{
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 20px;
+    color: #787878;
+}
+.event_posts div{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e8e8e8;
+    display: flex;
+    margin-bottom: 20px;
+}
+/*Portal Events End  */
 @media only screen and (max-width : 1200px){}
 @media only screen and (max-width : 992px){}
 @media only screen and (max-width : 768px){}
