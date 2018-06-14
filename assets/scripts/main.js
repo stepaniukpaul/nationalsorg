@@ -131,4 +131,14 @@ $(document).ready(function () {
         var h=d[g]('body')[0];
         h.appendChild(s);
     }})();
+    // Datapicker
+    $('#js-date-picker').datepicker({
+        changeYear: true,
+        yearRange: "1950:2018",
+        dateFormat: "dd/mm/yy"
+    });
+    // Clear Date value in date field
+    $('.js-clear_date_field').click(function () {
+        $('#js-date-picker').val('');
+    });
 });

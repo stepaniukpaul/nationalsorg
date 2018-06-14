@@ -1678,7 +1678,7 @@ a {
     transition: all ease .5s;
 }
 .error{
-    padding-top: 7px;
+    padding-top: 25px;
     font-size: 14px;
     line-height: 16px;
     color: #f5283b;
@@ -1922,10 +1922,7 @@ a {
     display: block;
 }
 .profile_photo_actions label input{
-    width: 0px;
-    height: 0px;
-    position:absolute;
-    top: -1000000px;
+    display: none;
 }
 .profile_photo_actions label{
     cursor: pointer;
@@ -1941,6 +1938,10 @@ a {
     color: #fff;
     border-radius: 5px;
     font-size: 14px;
+    transition: all ease .3s;
+}
+.profile_photo_actions label:hover{
+    background-color: #1d1d1e;
 }
 .profile_photo_actions label:before{
     content: '\f07b';
@@ -1972,6 +1973,17 @@ a {
     padding-left: 20px;
     border: 1px solid #bababa;
     border-radius: 5px;
+    transition: all ease .5s;
+}
+.profile_photo_actions button:hover,.upload_photo-in button:hover{
+    background-color: #e11f46;
+    border-color: #e11f46;
+    color: #fff;
+    transition: all ease .5s;
+}
+.profile_photo_actions button:hover:before,.upload_photo-in button:hover:before{
+    color: #fff !important;
+    transition: all ease .3s;
 }
 .profile_photo_actions button.clear_photo_field:before{
     content: '\f2ed';
@@ -2004,6 +2016,28 @@ a {
 }
 .personal_content_change{
     width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.personal_content_change a{
+    align-self: center;
+    font-size: 14px;
+    color: #2579bf;
+    padding-bottom: 7px;
+}
+.personal_content_change .send_btn{
+    align-self: center;
+    background-color: #f5283b;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color ease .5s
+}
+.personal_content_change .send_btn:hover{
+    background-color: #1d1d1e;
+    transition: background-color ease .5s
 }
 .personal_content_lp,.personal_content_rp{
     display: flex;
@@ -2013,8 +2047,9 @@ a {
     margin-bottom: 40px;
 }
 .personal_content_lp label,.personal_content_rp label{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     width: 390px;
+    position: relative;
 }
 .personal_content_lp label span,.personal_content_rp label span{
     font-size: 14px;
@@ -2046,8 +2081,57 @@ a {
     line-height: 14px;
     color: #787878;
 }
-.personal_content_lp label:last-child,.personal_content_rp label:last-child{
-    margin-bottom: 0;
+
+.personal_content_rp label span.date_select_wrap{
+    display: flex;
+    padding-bottom: 0;
+}
+.personal_content_rp label span.date_select_wrap input{
+    display: flex;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.personal_content_rp label span.focus_date_field,.personal_content_rp label span.clear_date_field{
+    width: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 0;
+    align-items: center;
+    background-color: #e8e8e8;
+    border: 1px solid #bababa;
+    cursor: pointer;
+}
+.personal_content_rp label span.focus_date_field i,.personal_content_rp label span.clear_date_field i{
+    font-size: 12px;
+    color: #787878;
+}
+.personal_content_rp label span.clear_date_field{
+    border-left: none;
+}
+.personal_content_rp label span.focus_date_field{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.personal_content_rp label span.format_example,.personal_content_lp label span.format_example{
+    position: absolute;
+    padding-top: 7px;
+    left: 0;
+    padding-bottom: 0;
+    font-size: 12px;
+    line-height: 12px;
+    color: #bababa;
+}
+.personal_groups{
+    padding-top: 40px;
+}
+.personal_groups .news-card__content{
+    margin-left: 20px;
+}
+.personal_groups .news-group__item{
+    margin-left: 0;
+    margin-top: 0;
 }
 
 /*Personal Settings Ebd*/
