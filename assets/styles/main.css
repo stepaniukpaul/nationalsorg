@@ -2026,7 +2026,7 @@ a {
     align-self: center;
     font-size: 14px;
     color: #2579bf;
-    padding-bottom: 7px;
+    padding-bottom: 10px;
 }
 .personal_content_change .send_btn{
     align-self: center;
@@ -2126,12 +2126,44 @@ a {
 .personal_groups{
     padding-top: 40px;
 }
-.personal_groups .news-card__content{
+.personal_groups_in .news-card__content{
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.personal_groups .news-group__item{
+.personal_groups_in .news-card__content .news-card__title{
+    margin-bottom: 10px;
+}
+.personal_groups_in .news-group__item{
     margin-left: 0;
     margin-top: 0;
+    margin-bottom: 30px;
+    flex-basis: auto;
+}
+.personal_group_preview .send_btn{
+    width: 200px;
+    background-color: #f5283b;
+    transition: background-color ease .5s;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.personal_group_preview .send_btn:hover{
+    background-color: #1d1d1e;
+    transition: background-color ease .5s;
+}
+.personal_group_preview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.personal_group_preview .home_titles{
+    margin-bottom: 35px;
+}
+.personal_groups_in{
+    display: flex;
+    flex-direction: column;
 }
 
 /*Personal Settings Ebd*/
