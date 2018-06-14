@@ -1700,7 +1700,7 @@ a {
     max-width: 1040px;
     width: 100%;
 }
-.portal_news_wrap h4{
+.home_titles{
     font-size: 18px;
     color: #181818;
     margin-bottom: 30px;
@@ -1912,11 +1912,12 @@ a {
 }
 .profile_photo_info{
     max-width: 310px;
-    max-height: 150px;
+    /*max-height: 150px;*/
     margin-bottom: 10px;
+    /*overflow: hidden;*/
 }
 .profile_photo_info img{
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
 }
@@ -1995,6 +1996,58 @@ a {
     line-height: 14px;
     color: #787878;
     font-weight: 700;
+}
+.personal_content_field form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.personal_content_change{
+    width: 100%;
+}
+.personal_content_lp,.personal_content_rp{
+    display: flex;
+    flex-direction: column;
+}
+.personal_photo_wrap{
+    margin-bottom: 40px;
+}
+.personal_content_lp label,.personal_content_rp label{
+    margin-bottom: 20px;
+    width: 390px;
+}
+.personal_content_lp label span,.personal_content_rp label span{
+    font-size: 14px;
+    line-height: 14px;
+    color: #181818;
+    display: inline-block;
+    padding-bottom: 7px;
+}
+.req_field{
+    position: relative;
+    padding-right: 7px;
+}
+.req_field:before{
+    content: "*";
+    position: absolute;
+    top: 0;
+    right: 0px;
+    display: block;
+    color: #f5283b;
+    font-weight: 700;
+}
+.personal_content_lp label input ,.personal_content_rp label input ,.personal_content_lp label select,.personal_content_rp label select{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #bababa;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #787878;
+}
+.personal_content_lp label:last-child,.personal_content_rp label:last-child{
+    margin-bottom: 0;
 }
 
 /*Personal Settings Ebd*/

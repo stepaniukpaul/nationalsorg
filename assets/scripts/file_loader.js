@@ -1,9 +1,19 @@
 $(document).ready(function () {
-    $('#take_file').on('change',function () {
-        if($(this).files && $(this).files[0]){
-            $('.js-user-photo').attr('src',e.target.result);
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('.js-user-photo').attr('src', e.target.result);
+            };
+
+            reader.readAsDataURL(input.files[0]);
         }
-        var test = $('#take_file').prop('files')[0];
-        console.log(test)
+    }
+    $('#take_file').change(function () {
+        readURL(this);
+    });
+    $('.clear_photo_field').on('click',function () {
+        $('.js-user-photo').attr('src', 'assets/images/personal-photo.png');
     });
 });
