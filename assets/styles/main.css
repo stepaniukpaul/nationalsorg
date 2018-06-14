@@ -1912,12 +1912,12 @@ a {
 }
 .profile_photo_info{
     max-width: 310px;
-    /*max-height: 150px;*/
+    max-height: 200px;
     margin-bottom: 10px;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 .profile_photo_info img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
@@ -2009,10 +2009,15 @@ a {
     color: #787878;
     font-weight: 700;
 }
-.personal_content_field form{
+ form.personal_content_field{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     flex-wrap: wrap;
+}
+.personal_form_in{
+    display: flex;
+    justify-content: space-between;
 }
 .personal_content_change{
     width: 100%;
