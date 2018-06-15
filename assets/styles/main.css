@@ -1794,6 +1794,10 @@ a {
     padding: 48px 23px 23px 48px;
     min-height: 280px;
     display: block;
+    overflow: hidden;
+    background: url("../images/2321.png") no-repeat 50%;
+    background-size: cover;
+    border-radius: 5px;
 }
 
 .event__banner .layout__title {
@@ -1812,6 +1816,10 @@ a {
 .event__buttons {
     width: 300px;
     margin-left: 55px;
+}
+
+.event__details ul {
+    margin-top: 48px;
 }
 
 .event__details .layout__title {
