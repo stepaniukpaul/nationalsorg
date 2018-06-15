@@ -1,3 +1,10 @@
+/*
+    Что бы получить предпросмотр картинки
+    вызываем функцию readURL в событии change которое вызываем на инпут type = "file"
+
+
+
+*/
 $(document).ready(function () {
     //Get preview image in file loader field
     function readURL(input) {
@@ -5,6 +12,8 @@ $(document).ready(function () {
             // create filereader
             var reader = new FileReader();
 
+
+            // А так же нужно указать место для замены src картинки которую нужно поменять на загруженную
             reader.onload = function (e) {
                 //Change default image src on new path
                 $('.js-user-photo').attr('src', e.target.result);
