@@ -248,6 +248,7 @@
 
     .event__banner>h3, .event__banner>div {
         max-width: 540px;
+        padding: 0 15px;
         margin: 0 auto;
     }
 
@@ -316,6 +317,10 @@
     }
     .entitled-group__controls > span{
         padding-right: 20px;
+    }
+
+    .container-resize {
+        padding: 0;
     }
 }
 
