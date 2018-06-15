@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <title>Personal settings</title>
+    <title>Wish wall</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -58,30 +58,30 @@
                     </div>
                     <div class="dropdown">
                         <button class="btn dropdown__button">
-									<span class="btn__label">
-										<span class="country-flag">
-											<span class="country-flag__item">RU</span>
-											<img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
-										</span>
-									</span>
+                            <span class="btn__label">
+                                <span class="country-flag">
+                                    <span class="country-flag__item">RU</span>
+                                    <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                </span>
+                            </span>
                             <span class="btn__label icon icon_caret"></span>
                         </button>
                         <ul class="actions-menu dropdown__content">
                             <li>
                                 <a href="#" class="actions-menu__link">
-											<span class="country-flag">
-												<span class="country-flag__item">EU</span>
-												<img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
-											</span>
+                                    <span class="country-flag">
+                                        <span class="country-flag__item">EU</span>
+                                        <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                    </span>
                                 </a>
                             </li>
                             <li class="actions-menu__divider"></li>
                             <li>
                                 <a href="#" class="actions-menu__link">
-											<span class="country-flag">
-												<span class="country-flag__item">FR</span>
-												<img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
-											</span>
+                                    <span class="country-flag">
+                                        <span class="country-flag__item">FR</span>
+                                        <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                    </span>
                                 </a>
                             </li>
                         </ul>
@@ -189,125 +189,28 @@
             </li>
         </ul>
         <div class="layout__content">
-            <div class="personal_setting_wrap">
-                <div class="personal_information">
-                    <div class="personal_photo_wrap">
-                        <div class="profile_photo_info">
-                            <img class="js-user-photo" src="assets/images/personal-photo.png" alt="">
-                        </div>
-                        <div class="profile_photo_actions">
-                            <button class="clear_photo_field">Remove</button>
-                            <button class="upload_photo-in">Upload</button>
-                            <label for="take_file" class="file_load_button">
-                                Browse...
-                                <input type="file" value="Browse..." id="take_file" >
-                            </label>
-                        </div>
-                    </div>
-                    <h4 class="home_titles">Personal settings</h4>
-                    <form method="GET" class="formWithValidation personal_content_field">
-                        <div class="personal_form_in">
-                            <div class="personal_content_lp">
-                                <label>
-                                    <span class="req_field">Name</span>
-                                    <input type="text">
-                                </label>
-                                <label>
-                                    <span class="req_field">Gender</span>
-                                    <input type="text">
-                                </label>
-                                <label>
-                                    <span>Nickname</span>
-                                    <input type="text">
-                                </label>
-                                <label>
-                                    <span>Country of residence</span>
-                                    <select name="country">
-                                        <option value="">Afganistan (+93)</option>
-                                        <option value="">Afganistan (+94)</option>
-                                        <option value="">Afganistan (+95)</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span class="req_field ">Email</span>
-                                    <input type="text" class="email required">
-                                    <span class="format_example">If you have changed your email address, write it here.</span>
-                                </label>
-                            </div>
-                            <div class="personal_content_rp">
-                                <label>
-                                    <span class="req_field">Surname</span>
-                                    <input type="text">
-                                </label>
-                                <label>
-                                    <span class="req_field">Date of Birth</span>
-                                    <span class="date_select_wrap">
-                                        <span class="focus_date_field js-focus_date_field"><i class="fas fa-calendar-alt"></i></span>
-                                        <span class="clear_date_field js-clear_date_field"><i class="fas fa-times"></i></span>
-                                        <input id="js-date-picker">
-                                    </span>
-                                    <span class="format_example">Day / Month / Year</span>
-                                </label>
-                                <label>
-                                    <span>Show me like</span>
-                                    <select name="nickname">
-                                        <option value="">Nickname1</option>
-                                        <option value="">Nickname2</option>
-                                        <option value="">Nickname3</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span>City of residence</span>
-                                    <input type="text">
-                                </label>
-                                <label>
-                                    <span class="req_field">Phone number</span>
-                                    <input type="text">
-                                    <span class="format_example">For example: +33612345678</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="personal_content_change">
-                            <a href="#">Unsubscribe from our email list</a>
-                            <input type="submit" value="Send" class="send_btn">
-                        </div>
+            <div class="wish_wall_wrap">
+                <div class="wish_wall_form">
+                    <h4 class="home_titles">Wish Wall</h4>
+                    <form method="GET">
+                        <label>
+                            <span class="req_field">Name</span>
+                            <input type="text">
+                        </label>
+                        <label>
+                            <span class="req_field">Email</span>
+                            <input type="text">
+                        </label>
+                        <label>
+                            <span class="req_field">Wishes</span>
+                            <textarea class='message required'></textarea>
+                        </label>
+                        <div class="captcha"></div>
+
                     </form>
                 </div>
-                <div class="personal_groups">
-                    <div class="personal_group_preview">
-                        <button class="send_btn">Create new group</button>
-                        <h4 class="home_titles">GROUPS</h4>
-                    </div>
-                    <div class="personal_groups_in">
-                        <div class="news-card news-group__item">
-                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
-                            <div class="news-card__content">
-                                <a href="#" class="news-card__title">Name</a>
-                                <a href="#" class="label label_default news-card__label">Tag</a>
-                            </div>
-                        </div>
-                        <div class="news-card news-group__item">
-                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
-                            <div class="news-card__content">
-                                <a href="#" class="news-card__title">Name</a>
-                                <a href="#" class="label label_default news-card__label">Tag</a>
-                            </div>
-                        </div>
-                        <div class="news-card news-group__item">
-                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
-                            <div class="news-card__content">
-                                <a href="#" class="news-card__title">Name</a>
-                                <a href="#" class="label label_default news-card__label">Tag</a>
-                            </div>
-                        </div>
-                        <div class="news-card news-group__item">
-                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
-                            <div class="news-card__content">
-                                <a href="#" class="news-card__title">Name</a>
-                                <a href="#" class="label label_default news-card__label">Tag</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="wish_wall_massage">
+
                 </div>
             </div>
         </div>
