@@ -341,7 +341,10 @@
     .container{
         padding: 0 7px
     }
-
+    .row{
+        margin-right: 0;
+        margin-left: 0;
+    }
     /* Titles groups in layout */
     .entitled-group__controls{
         flex-wrap: wrap;
@@ -363,6 +366,16 @@
         width: 100%;
     }
     /*Personal Setting page End */
+}
+
+
+@media only screen and (max-width : 340px){
+    .profile_photo_info{
+        width: 100%;
+    }
+    .personal_photo_wrap{
+        width: 100%;
+    }
 }
 
 
