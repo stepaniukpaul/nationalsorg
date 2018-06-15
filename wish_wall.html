@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Wish wall</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!--<link href="/assets/styles/Bootstrap/bootstrap.min.css" rel="stylesheet">-->
+    <link href="./assets/styles/Bootstrap/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="./assets/styles/Slick/slick.css" rel="stylesheet">
+    <link href="./assets/styles/Slick/slick-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/styles/jQuery_Ui/jquery-ui-1.9.2.custom.min.css">
+    <link href="./assets/styles/main.css" rel="stylesheet">
+    <link href="./assets/styles/media.css" rel="stylesheet">
+
+    <script src="./assets/scripts/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="assets/scripts/jQuery/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="./assets/scripts/Slick/slick.min.js"></script>
+    <script src="./assets/scripts/clocks.js"></script>
+    <script src="./assets/scripts/main.js"></script>
+    <script src="assets/scripts/forms.js"></script>
+    <script src="assets/scripts/tabs.js"></script>
+    <script src="assets/scripts/file_loader.js"></script>
+</head>
+
+<body>
+<div class="m-control">
+    <div class="m-control__burger">
+        <span class="m-control__line m-control__line_top"></span>
+        <span class="m-control__line m-control__line_icon"></span>
+        <span class="m-control__line m-control__line_end"></span>
+    </div>
+</div>
+<header class="header">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-12 col-md-6 col-lg-5 col-xl-3">
+                <div class="header__control">
+                    <div class="dropdown">
+                        <button class="btn btn_default dropdown__button">
+                            <span class="btn__label">Lyon</span>
+                            <span class="btn__label icon icon_caret"></span>
+                        </button>
+                        <ul class="actions-menu dropdown__content">
+                            <li>
+                                <a href="#" class="actions-menu__link">Lyon</a>
+                            </li>
+                            <li>
+                                <a href="#" class="actions-menu__link">Lyon</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown__button">
+                            <span class="btn__label">
+                                <span class="country-flag">
+                                    <span class="country-flag__item">RU</span>
+                                    <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                </span>
+                            </span>
+                            <span class="btn__label icon icon_caret"></span>
+                        </button>
+                        <ul class="actions-menu dropdown__content">
+                            <li>
+                                <a href="#" class="actions-menu__link">
+                                    <span class="country-flag">
+                                        <span class="country-flag__item">EU</span>
+                                        <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="actions-menu__divider"></li>
+                            <li>
+                                <a href="#" class="actions-menu__link">
+                                    <span class="country-flag">
+                                        <span class="country-flag__item">FR</span>
+                                        <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="logo">
+                    <a href="#" class="link link_seo"></a>
+                    <img src="./assets/images/logo.png" alt="" />
+                    <div class="logo__wrap">
+                        <span class="logo__title">Nationsorg</span>
+                        <span class="logo__subtitle">beta part1 ver.:0.1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="widgets col-12 col-xl-6">
+                <div class="clock-group">
+                    <div class="clock clock-group__item" data-clock="3" id="c1">
+                        <ul class="clock__face">
+                            <li class="clock__hand clock__hand_second"></li>
+                            <li class="clock__hand clock__hand_minute"></li>
+                            <li class="clock__hand clock__hand_hour"></li>
+                        </ul>
+                        <span class="clock__location">Brest</span>
+                    </div>
+                    <div class="clock clock-group__item" data-clock="2" id="c2">
+                        <ul class="clock__face">
+                            <li class="clock__hand clock__hand_second"></li>
+                            <li class="clock__hand clock__hand_minute"></li>
+                            <li class="clock__hand clock__hand_hour"></li>
+                        </ul>
+                        <span class="clock__location">Lyon</span>
+                    </div>
+                    <div class="clock clock-group__item" data-clock="3" id="c3">
+                        <ul class="clock__face">
+                            <li class="clock__hand clock__hand_second"></li>
+                            <li class="clock__hand clock__hand_minute"></li>
+                            <li class="clock__hand clock__hand_hour"></li>
+                        </ul>
+                        <span class="clock__location">Moscow</span>
+                    </div>
+                    <div class="clock clock-group__item" data-clock="-4" id="c4">
+                        <ul class="clock__face">
+                            <li class="clock__hand clock__hand_second"></li>
+                            <li class="clock__hand clock__hand_minute"></li>
+                            <li class="clock__hand clock__hand_hour"></li>
+                        </ul>
+                        <span class="clock__location">New York</span>
+                    </div>
+                </div>
+                <div class="weather">
+                    <img src="./assets/images/widget.png" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 col-xl-3">
+                <ul class="auth-controls">
+                    <li class="auth-controls__item">
+                        <button class="btn">
+                            <span class="btn__label icon icon_lock"></span>
+                            <span class="btn__label">Register</span>
+                        </button>
+                    </li>
+                    <li class="auth-controls__item">
+                        <button class="btn btn_default">
+                            <span class="btn__label icon icon_login"></span>
+                            <span class="btn__label">Login</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="layout">
+    <div class="m-menu">
+        <nav class="nav-main nav-main_m-menu">
+            <div class="nav-main__wrap container">
+                <a href="#" class="nav-main__link is-active">
+                    <span class="nav-main__label">Home</span>
+                </a>
+                <a href="#" class="nav-main__link">
+                    <span class="nav-main__label">Language courses</span>
+                </a>
+                <a href="#" class="nav-main__link">
+                    <span class="nav-main__label">Groups</span>
+                </a>
+                <a href="#" class="nav-main__link">
+                    <span class="nav-main__label">Events</span>
+                </a>
+                <a href="#" class="nav-main__link">
+                    <span class="nav-main__label">Forum</span>
+                </a>
+                <a href="#" class="nav-main__link">
+                    <span class="nav-main__label">Partners</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="container remove_default_styles">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+                <a href="/" class="breadcrumbs__link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <span class="breadcrumbs__link breadcrumbs__link_static">Название страницы</span>
+            </li>
+        </ul>
+        <div class="layout__content">
+            <div class="wish_wall_wrap">
+                <div class="wish_wall_form">
+                    <h4 class="home_titles">Wish Wall</h4>
+                    <form method="GET">
+                        <label>
+                            <span class="req_field">Name</span>
+                            <input type="text">
+                        </label>
+                        <label>
+                            <span class="req_field">Email</span>
+                            <input type="text">
+                        </label>
+                        <label>
+                            <span class="req_field">Wishes</span>
+                            <textarea class='message required'></textarea>
+                        </label>
+                        <div class="captcha"></div>
+
+                    </form>
+                </div>
+                <div class="wish_wall_massage">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer footer">
+    <nav class="nav-main">
+        <div class="nav-main__wrap container">
+            <a href="#" class="nav-main__link is-active">
+                <span class="nav-main__label">Home</span>
+            </a>
+            <a href="#" class="nav-main__link">
+                <span class="nav-main__label">Language courses</span>
+            </a>
+            <a href="#" class="nav-main__link">
+                <span class="nav-main__label">Groups</span>
+            </a>
+            <a href="#" class="nav-main__link">
+                <span class="nav-main__label">Events</span>
+            </a>
+            <a href="#" class="nav-main__link">
+                <span class="nav-main__label">Forum</span>
+            </a>
+            <a href="#" class="nav-main__link">
+                <span class="nav-main__label">Partners</span>
+            </a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-3 order-2 order-lg-first">
+                <p class="copyright">© Nationsorg 2017</p>
+            </div>
+            <div class="col-12 col-lg-9 order-1">
+                <nav class="nav-footer">
+                    <a href="#" class="nav-footer__link">
+                        <span class="nav-footer__label">About Us</span>
+                    </a>
+                    <a href="#" class="nav-footer__link is-active">
+                        <span class="nav-footer__label">About Project</span>
+                    </a>
+                    <a href="#" class="nav-footer__link">
+                        <span class="nav-footer__label">Franchising</span>
+                    </a>
+                    <a href="#" class="nav-footer__link">
+                        <span class="nav-footer__label">Wish Wall</span>
+                    </a>
+                    <a href="#" class="nav-footer__link">
+                        <span class="nav-footer__label">CGU</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="fixed-aside">
+    <div class="slideout fixed-aside__item">
+        <div class="slideout__btn slideout__btn_primary">
+            <span class="slideout__btn-label">An error in the text?</span>
+        </div>
+        <div class="slideout__wrap">
+            <form class="slideout__content slideout__content_center">
+                <p>Something edit</p>
+                <textarea placeholder="Email address" class="field field_area" required="required"></textarea>
+                <button class="btn btn_primary btn_size_md slideout__button">
+                    <span class="btn__label">Enter</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="slideout fixed-aside__item">
+        <div class="slideout__btn slideout__btn_secondary">
+            <span class="slideout__btn-label">Subscribe to our mailing list</span>
+        </div>
+        <div class="slideout__wrap">
+            <form class="slideout__content slideout__content_center">
+                <p>Subscribe to our mailing list</p>
+                <input placeholder="Email address" class="field" type="email" required="required"
+                />
+                <button class="btn btn_primary btn_size_md slideout__button">
+                    <span class="btn__label">Subscribe</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Nationsorg</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link href="./assets/styles/Bootstrap/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="./assets/styles/Slick/slick.css" rel="stylesheet">
+    <link href="./assets/styles/Slick/slick-theme.css" rel="stylesheet">
+    <link href="./assets/styles/main.css" rel="stylesheet">
+    <link href="./assets/styles/media.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <script src="./assets/scripts/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="./assets/scripts/Slick/slick.min.js"></script>
+    <script src="./assets/scripts/clocks.js"></script>
+    <script src="./assets/scripts/main.js"></script>
+</head>
+
+<body>
+<div class="m-control">
+    <div class="m-control__burger">
+        <span class="m-control__line m-control__line_top"></span>
+        <span class="m-control__line m-control__line_icon"></span>
+        <span class="m-control__line m-control__line_end"></span>
+    </div>
+</div>
+<header class="header">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-12 col-md-6 col-lg-5 col-xl-3">
+                <div class="header__control">
+                    <div class="dropdown">
+                        <button class="btn btn_default dropdown__button">
+                            <span class="btn__label">Lyon</span>
+                            <span class="btn__label icon icon_caret"></span>
+                        </button>
+                        <ul class="actions-menu dropdown__content">
+                            <li>
+                                <a href="#" class="actions-menu__link">Lyon</a>
+                            </li>
+                            <li>
+                                <a href="#" class="actions-menu__link">Lyon</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown__button">
+									<span class="btn__label">
+										<span class="country-flag">
+											<span class="country-flag__item">RU</span>
+											<img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+										</span>
+									</span>
+                            <span class="btn__label icon icon_caret"></span>
+                        </button>
+                        <ul class="actions-menu dropdown__content">
+                            <li>
+                                <a href="#" class="actions-menu__link">
+											<span class="country-flag">
+												<span class="country-flag__item">EU</span>
+												<img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+											</span>
+                                </a>
+                            </li>
+                            <li class="actions-menu__divider"></li>
+                            <li>
+                                <a href="#" class="actions-menu__link">
+											<span class="country-flag">
+												<span class="country-flag__item">FR</span>
+												<img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+											</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="logo">
+                    <a href="#" class="link link_seo"></a>
+                    <img src="./assets/images/logo.png" alt="" />
+                    <div class="logo__wrap">
+                        <span class="logo__title">Nationsorg</span>
+                        <span class="logo__subtitle">beta part1 ver.:0.1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="widgets col-12 col-xl-6">
+                <div class="clock-group">
+                    <div class="clock clock-group__item" data-clock="3" id="c1">
+                        <ul class="clock__face">
+                            <li class="clock__hand clock__hand_second"></li>
+                            <li class="clock__hand clock__hand_minute"></li>
+                            <li class="clock__hand clock__hand_hour"></li>
+                        </ul>
+                        <span class="clock__location">Brest</span>
+                    </div>
+                    <div class="clock clock-group__item" data-clock="2" id="c2">
+                        <ul class="clock__face">
+                            <li class="clock__hand clock__hand_second"></li>
+                            <li class="clock__hand clock__hand_minute"></li>
+                            <li class="clock__hand clock__hand_hour"></li>
+                        </ul>
+                        <span class="clock__location">Lyon</span>
+                    </div>
+                    <div class="clock clock-group__item" data-clock="3" id="c3">
+                        <ul class="clock__face">
+                            <li class="clock__hand clock__hand_second"></li>
+                            <li class="clock__hand clock__hand_minute"></li>
+                            <li class="clock__hand clock__hand_hour"></li>
+                        </ul>
+                        <span class="clock__location">Moscow</span>
+                    </div>
+                    <div class="clock clock-group__item" data-clock="-4" id="c4">
+                        <ul class="clock__face">
+                            <li class="clock__hand clock__hand_second"></li>
+                            <li class="clock__hand clock__hand_minute"></li>
+                            <li class="clock__hand clock__hand_hour"></li>
+                        </ul>
+                        <span class="clock__location">New York</span>
+                    </div>
+                </div>
+                <div class="weather">
+                    <img src="./assets/images/widget.png" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 col-xl-3">
+                <ul class="auth-controls">
+                    <li class="auth-controls__item">
+                        <button class="btn">
+                            <span class="btn__label icon icon_lock"></span>
+                            <span class="btn__label">Register</span>
+                        </button>
+                    </li>
+                    <li class="auth-controls__item">
+                        <button class="btn btn_default">
+                            <span class="btn__label icon icon_login"></span>
+                            <span class="btn__label">Login</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="layout">
+    <div class="m-menu">
+        <nav class="nav-main nav-main_m-menu">
+            <div class="nav-main__wrap container">
+                <a href="#" class="nav-main__link is-active">
+                    <span class="nav-main__label">Home</span>
+                </a>
+                <a href="#" class="nav-main__link">
+                    <span class="nav-main__label">Language courses</span>
+                </a>
+                <a href="#" class="nav-main__link">
+                    <span class="nav-main__label">Groups</span>
+                </a>
+                <a href="#" class="nav-main__link">
+                    <span class="nav-main__label">Events</span>
+                </a>
+                <a href="#" class="nav-main__link">
+                    <span class="nav-main__label">Forum</span>
+                </a>
+                <a href="#" class="nav-main__link">
+                    <span class="nav-main__label">Partners</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+                <a href="/" class="breadcrumbs__link">Home</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="/" class="breadcrumbs__link">Events</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <span class="breadcrumbs__link breadcrumbs__link_static">Event</span>
+            </li>
+        </ul>
+    </div>
+    <div class="layout__content">
+        <div class="container container-resize">
+            <div class="event__banner">
+                <h3 class="layout__title">Event</h3>
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-end">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    </p>
+                    <a class="btn btn_accent event__btn">
+                        <span class="btn__label">Join</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="event__media d-md-flex justify-content-between">
+                <div class="media__like">
+                    <a class="btn btn_default">
+                        <span class="btn__label">Like</span>
+                    </a>
+                    <span>10</span>
+                    <i class="far fa-thumbs-up"></i>
+                </div>
+                <div class="d-flex flex-column flex-md-row align-items-md-center">
+                    <div class="event__pluso">
+                        <div class="pluso" data-background="transparent" data-options="small,round,line,horizontal,counter,theme=04" data-services="google,vkontakte,linkedin,twitter,facebook"></div>
+                    </div>
+                    <div class="event__buttons d-flex">
+                        <a class="btn btn_accent">
+                            <span class="btn__label">Settings</span>
+                        </a>
+                        <a class="btn btn_accent">
+                            <span class="btn__label">Settings</span>
+                        </a>
+                        <a class="btn btn_accent">
+                            <span class="btn__label">Settings</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="event__details">
+                <div class="row">
+                    <div class="col-12 col-md-10 col-lg-6 order-3 order-lg-1">
+                        <h3 class="layout__title">Detalis</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                        <a class="btn btn_accent event__btn">
+                            <span class="btn__label">Settings</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-1 order-2"></div>
+                    <div class="col-lg-5 order-1 order-lg-3">
+                        <ul>
+                            <li class="d-flex event__item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <span class="event__text">
+                                        Set, Mar 24 at 13:30 - San, Mar 25 at 18:30
+                                    </span>
+                                    <span class="event__text">
+                                        GMT+01:00
+                                    </span>
+                                    <span class="event__text color-gray">
+                                        This week
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="d-flex event__item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <span class="event__text">
+                                        6 going
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="d-flex event__item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <span class="event__text">
+                                        Espace ozaman
+                                    </span>
+                                    <span class="event__text color-gray">
+                                        12 rue de I’Alma, 69001 Lyon, France
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer footer">
+    <nav class="nav-main">
+        <div class="nav-main__wrap container">
+            <a href="#" class="nav-main__link is-active">
+                <span class="nav-main__label">Home</span>
+            </a>
+            <a href="#" class="nav-main__link">
+                <span class="nav-main__label">Language courses</span>
+            </a>
+            <a href="#" class="nav-main__link">
+                <span class="nav-main__label">Groups</span>
+            </a>
+            <a href="#" class="nav-main__link">
+                <span class="nav-main__label">Events</span>
+            </a>
+            <a href="#" class="nav-main__link">
+                <span class="nav-main__label">Forum</span>
+            </a>
+            <a href="#" class="nav-main__link">
+                <span class="nav-main__label">Partners</span>
+            </a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-3 order-2 order-lg-first">
+                <p class="copyright">© Nationsorg 2017</p>
+            </div>
+            <div class="col-12 col-lg-9 order-1">
+                <nav class="nav-footer">
+                    <a href="#" class="nav-footer__link">
+                        <span class="nav-footer__label">About Us</span>
+                    </a>
+                    <a href="#" class="nav-footer__link is-active">
+                        <span class="nav-footer__label">About Project</span>
+                    </a>
+                    <a href="#" class="nav-footer__link">
+                        <span class="nav-footer__label">Franchising</span>
+                    </a>
+                    <a href="#" class="nav-footer__link">
+                        <span class="nav-footer__label">Wish Wall</span>
+                    </a>
+                    <a href="#" class="nav-footer__link">
+                        <span class="nav-footer__label">CGU</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="fixed-aside">
+    <div class="slideout fixed-aside__item">
+        <div class="slideout__btn slideout__btn_primary">
+            <span class="slideout__btn-label">An error in the text?</span>
+        </div>
+        <div class="slideout__wrap">
+            <form class="slideout__content slideout__content_center">
+                <p>Something edit</p>
+                <textarea placeholder="Email address" class="field field_area" required="required"></textarea>
+                <button class="btn btn_primary btn_size_md slideout__button">
+                    <span class="btn__label">Enter</span>
+                </button>
+                <!--+b('ul').key-comb-->
+                <!--	+e('li').item-->
+                <!--		+btn('button', 'CTRL')._default._size_md-->
+                <!--	+e('li').item-->
+                <!--		+btn('button', 'ENTER')._default._size_md-->
+            </form>
+        </div>
+    </div>
+    <div class="slideout fixed-aside__item">
+        <div class="slideout__btn slideout__btn_secondary">
+            <span class="slideout__btn-label">Subscribe to our mailing list</span>
+        </div>
+        <div class="slideout__wrap">
+            <form class="slideout__content slideout__content_center">
+                <p>Subscribe to our mailing list</p>
+                <input placeholder="Email address" class="field" type="email" required="required"
+                />
+                <button class="btn btn_primary btn_size_md slideout__button">
+                    <span class="btn__label">Subscribe</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
