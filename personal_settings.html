@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <title>Portal News</title>
+    <title>Personal settings</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -15,15 +15,18 @@
     <link href="./assets/styles/Slick/slick.css" rel="stylesheet">
     <link href="./assets/styles/Slick/slick-theme.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/styles/jQuery_Ui/jquery-ui-1.9.2.custom.min.css">
     <link href="./assets/styles/main.css" rel="stylesheet">
-        <link href="./assets/styles/media.css" rel="stylesheet">
+    <link href="./assets/styles/media.css" rel="stylesheet">
 
     <script src="./assets/scripts/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="assets/scripts/jQuery/jquery-ui-1.9.2.custom.min.js"></script>
     <script src="./assets/scripts/Slick/slick.min.js"></script>
     <script src="./assets/scripts/clocks.js"></script>
     <script src="./assets/scripts/main.js"></script>
     <script src="assets/scripts/forms.js"></script>
     <script src="assets/scripts/tabs.js"></script>
+    <script src="assets/scripts/file_loader.js"></script>
 </head>
 
 <body>
@@ -176,7 +179,7 @@
             </div>
         </nav>
     </div>
-    <div class="container">
+    <div class="container remove_default_styles">
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
                 <a href="/" class="breadcrumbs__link">Главная</a>
@@ -186,61 +189,123 @@
             </li>
         </ul>
         <div class="layout__content">
-            <div class="portal_news_wrap">
-                <h4 class="home_titles">Portal News</h4>
-                <div class="news_section">
-                    <div class="news_sort">
-                        <button class="news_new-sort">Sort by new</button>
-                        <button class="news_name-sort">Sort by name</button>
+            <div class="personal_setting_wrap">
+                <div class="personal_information">
+                    <div class="personal_photo_wrap">
+                        <div class="profile_photo_info">
+                            <img class="js-user-photo" src="assets/images/personal-photo.png" alt="">
+                        </div>
+                        <div class="profile_photo_actions">
+                            <button class="clear_photo_field">Remove</button>
+                            <button class="upload_photo-in">Upload</button>
+                            <label for="take_file" class="file_load_button">
+                                Browse...
+                                <input type="file" value="Browse..." id="take_file" >
+                            </label>
+                        </div>
                     </div>
-                    <div class="news_sort_counter">
-                        <span>Showing entries:</span>
-                        <div class="counter_wrap">
-                            <span class="events_counter_from">1</span>
-                            <span>-</span>
-                            <span class="events_counter_to">5</span>
-                            <span>of</span>
-                            <span class="events_count">5</span>
-                            <span>items</span>
+                    <h4 class="home_titles">Personal settings</h4>
+                    <form method="GET" class="formWithValidation personal_content_field">
+                        <div class="personal_form_in">
+                            <div class="personal_content_lp">
+                                <label>
+                                    <span class="req_field">Name</span>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <span class="req_field">Gender</span>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <span>Nickname</span>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <span>Country of residence</span>
+                                    <select name="country">
+                                        <option value="">Afganistan (+93)</option>
+                                        <option value="">Afganistan (+94)</option>
+                                        <option value="">Afganistan (+95)</option>
+                                    </select>
+                                </label>
+                                <label>
+                                    <span class="req_field ">Email</span>
+                                    <input type="text" class="email required">
+                                    <span class="format_example">If you have changed your email address, write it here.</span>
+                                </label>
+                            </div>
+                            <div class="personal_content_rp">
+                                <label>
+                                    <span class="req_field">Surname</span>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <span class="req_field">Date of Birth</span>
+                                    <span class="date_select_wrap">
+                                        <span class="focus_date_field js-focus_date_field"><i class="fas fa-calendar-alt"></i></span>
+                                        <span class="clear_date_field js-clear_date_field"><i class="fas fa-times"></i></span>
+                                        <input id="js-date-picker">
+                                    </span>
+                                    <span class="format_example">Day / Month / Year</span>
+                                </label>
+                                <label>
+                                    <span>Show me like</span>
+                                    <select name="nickname">
+                                        <option value="">Nickname1</option>
+                                        <option value="">Nickname2</option>
+                                        <option value="">Nickname3</option>
+                                    </select>
+                                </label>
+                                <label>
+                                    <span>City of residence</span>
+                                    <input type="text">
+                                </label>
+                                <label>
+                                    <span class="req_field">Phone number</span>
+                                    <input type="text">
+                                    <span class="format_example">For example: +33612345678</span>
+                                </label>
+                            </div>
                         </div>
-                        <span class="counter_from-to"></span>
+                        <div class="personal_content_change">
+                            <a href="#">Unsubscribe from our email list</a>
+                            <input type="submit" value="Send" class="send_btn">
+                        </div>
+                    </form>
+                </div>
+                <div class="personal_groups">
+                    <div class="personal_group_preview">
+                        <button class="send_btn">Create new group</button>
+                        <h4 class="home_titles">GROUPS</h4>
                     </div>
-                    <div class="event_posts">
-                        <div>
-                            <span>01.01.2018</span>
-                            <p>
-                                Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut deleniti modi perspiciatis praesentium ratione? Aliquam dignissimos dolores libero minus sapiente. Ab consequuntur, culpa dolore explicabo iusto laboriosam maiores nostrum nulla officia, qui quis ullam vel voluptates. Ad aliquam culpa debitis delectus explicabo facilis illo ipsam iure maxime porro quaerat, quas rem repellat repudiandae, similique, tenetur ut velit. Accusantium ad, blanditiis consequuntur cupiditate eaque illo inventore ipsam, iste laborum magnam maiores molestiae molestias necessitatibus nemo nesciunt odit perferendis placeat quibusdam quod recusandae sequi similique sint totam vel vitae voluptatem voluptatibus? Aliquam animi commodi est fugiat maxime nihil perspiciatis. Ad, blanditiis?
-                            </p>
+                    <div class="personal_groups_in">
+                        <div class="news-card news-group__item">
+                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
+                            <div class="news-card__content">
+                                <a href="#" class="news-card__title">Name</a>
+                                <a href="#" class="label label_default news-card__label">Tag</a>
+                            </div>
                         </div>
-                        <div>
-                            <span>01.01.2018</span>
-                            <p>
-                                Lorem ipsum
-                            </p>
+                        <div class="news-card news-group__item">
+                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
+                            <div class="news-card__content">
+                                <a href="#" class="news-card__title">Name</a>
+                                <a href="#" class="label label_default news-card__label">Tag</a>
+                            </div>
                         </div>
-                        <div>
-                            <span>01.01.2018</span>
-                            <p>
-                                Lorem ipsum
-                            </p>
+                        <div class="news-card news-group__item">
+                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
+                            <div class="news-card__content">
+                                <a href="#" class="news-card__title">Name</a>
+                                <a href="#" class="label label_default news-card__label">Tag</a>
+                            </div>
                         </div>
-                        <div>
-                            <span>01.01.2018</span>
-                            <p>
-                                Lorem ipsum
-                            </p>
-                        </div>
-                        <div>
-                            <span>01.01.2018</span>
-                            <p>
-                                Lorem ipsum
-                            </p>
-                        </div>
-                        <div>
-                            <span>01.01.2018</span>
-                            <p>
-                                Lorem ipsum
-                            </p>
+                        <div class="news-card news-group__item">
+                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
+                            <div class="news-card__content">
+                                <a href="#" class="news-card__title">Name</a>
+                                <a href="#" class="label label_default news-card__label">Tag</a>
+                            </div>
                         </div>
                     </div>
                 </div>

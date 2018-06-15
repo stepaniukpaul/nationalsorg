@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <title>Portal News</title>
+    <title>Wish wall</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -15,15 +15,18 @@
     <link href="./assets/styles/Slick/slick.css" rel="stylesheet">
     <link href="./assets/styles/Slick/slick-theme.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/styles/jQuery_Ui/jquery-ui-1.9.2.custom.min.css">
     <link href="./assets/styles/main.css" rel="stylesheet">
-        <link href="./assets/styles/media.css" rel="stylesheet">
+    <link href="./assets/styles/media.css" rel="stylesheet">
 
     <script src="./assets/scripts/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="assets/scripts/jQuery/jquery-ui-1.9.2.custom.min.js"></script>
     <script src="./assets/scripts/Slick/slick.min.js"></script>
     <script src="./assets/scripts/clocks.js"></script>
     <script src="./assets/scripts/main.js"></script>
     <script src="assets/scripts/forms.js"></script>
     <script src="assets/scripts/tabs.js"></script>
+    <script src="assets/scripts/file_loader.js"></script>
 </head>
 
 <body>
@@ -55,30 +58,30 @@
                     </div>
                     <div class="dropdown">
                         <button class="btn dropdown__button">
-									<span class="btn__label">
-										<span class="country-flag">
-											<span class="country-flag__item">RU</span>
-											<img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
-										</span>
-									</span>
+                            <span class="btn__label">
+                                <span class="country-flag">
+                                    <span class="country-flag__item">RU</span>
+                                    <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                </span>
+                            </span>
                             <span class="btn__label icon icon_caret"></span>
                         </button>
                         <ul class="actions-menu dropdown__content">
                             <li>
                                 <a href="#" class="actions-menu__link">
-											<span class="country-flag">
-												<span class="country-flag__item">EU</span>
-												<img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
-											</span>
+                                    <span class="country-flag">
+                                        <span class="country-flag__item">EU</span>
+                                        <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                    </span>
                                 </a>
                             </li>
                             <li class="actions-menu__divider"></li>
                             <li>
                                 <a href="#" class="actions-menu__link">
-											<span class="country-flag">
-												<span class="country-flag__item">FR</span>
-												<img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
-											</span>
+                                    <span class="country-flag">
+                                        <span class="country-flag__item">FR</span>
+                                        <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                    </span>
                                 </a>
                             </li>
                         </ul>
@@ -176,7 +179,7 @@
             </div>
         </nav>
     </div>
-    <div class="container">
+    <div class="container remove_default_styles">
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
                 <a href="/" class="breadcrumbs__link">Главная</a>
@@ -186,63 +189,28 @@
             </li>
         </ul>
         <div class="layout__content">
-            <div class="portal_news_wrap">
-                <h4 class="home_titles">Portal News</h4>
-                <div class="news_section">
-                    <div class="news_sort">
-                        <button class="news_new-sort">Sort by new</button>
-                        <button class="news_name-sort">Sort by name</button>
-                    </div>
-                    <div class="news_sort_counter">
-                        <span>Showing entries:</span>
-                        <div class="counter_wrap">
-                            <span class="events_counter_from">1</span>
-                            <span>-</span>
-                            <span class="events_counter_to">5</span>
-                            <span>of</span>
-                            <span class="events_count">5</span>
-                            <span>items</span>
-                        </div>
-                        <span class="counter_from-to"></span>
-                    </div>
-                    <div class="event_posts">
-                        <div>
-                            <span>01.01.2018</span>
-                            <p>
-                                Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut deleniti modi perspiciatis praesentium ratione? Aliquam dignissimos dolores libero minus sapiente. Ab consequuntur, culpa dolore explicabo iusto laboriosam maiores nostrum nulla officia, qui quis ullam vel voluptates. Ad aliquam culpa debitis delectus explicabo facilis illo ipsam iure maxime porro quaerat, quas rem repellat repudiandae, similique, tenetur ut velit. Accusantium ad, blanditiis consequuntur cupiditate eaque illo inventore ipsam, iste laborum magnam maiores molestiae molestias necessitatibus nemo nesciunt odit perferendis placeat quibusdam quod recusandae sequi similique sint totam vel vitae voluptatem voluptatibus? Aliquam animi commodi est fugiat maxime nihil perspiciatis. Ad, blanditiis?
-                            </p>
-                        </div>
-                        <div>
-                            <span>01.01.2018</span>
-                            <p>
-                                Lorem ipsum
-                            </p>
-                        </div>
-                        <div>
-                            <span>01.01.2018</span>
-                            <p>
-                                Lorem ipsum
-                            </p>
-                        </div>
-                        <div>
-                            <span>01.01.2018</span>
-                            <p>
-                                Lorem ipsum
-                            </p>
-                        </div>
-                        <div>
-                            <span>01.01.2018</span>
-                            <p>
-                                Lorem ipsum
-                            </p>
-                        </div>
-                        <div>
-                            <span>01.01.2018</span>
-                            <p>
-                                Lorem ipsum
-                            </p>
-                        </div>
-                    </div>
+            <div class="wish_wall_wrap">
+                <div class="wish_wall_form">
+                    <h4 class="home_titles">Wish Wall</h4>
+                    <form method="GET">
+                        <label>
+                            <span class="req_field">Name</span>
+                            <input type="text">
+                        </label>
+                        <label>
+                            <span class="req_field">Email</span>
+                            <input type="text">
+                        </label>
+                        <label>
+                            <span class="req_field">Wishes</span>
+                            <textarea class='message required'></textarea>
+                        </label>
+                        <div class="captcha"></div>
+
+                    </form>
+                </div>
+                <div class="wish_wall_massage">
+
                 </div>
             </div>
         </div>

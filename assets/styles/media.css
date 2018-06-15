@@ -34,12 +34,41 @@
 
 
 @media only screen and (max-width : 1200px){
-
+    /*Personal Setting page*/
+    .personal_setting_wrap{
+        flex-wrap: wrap;
+    }
+    .personal_form_in{
+        justify-content: space-around;
+    }
+    .personal_groups_in{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .personal_group_preview{
+        flex-direction: column-reverse;
+    }
+    .personal_groups_in .news-group__item{
+        width: 45%;
+        margin-right: 0;
+    }
+    .personal_information{
+        margin-right: 0;
+        max-width: 100%;
+    }
+    .personal_groups{
+        padding-top: 60px;
+    }
+    /*Personal Setting page end*/
 }
 
 
 @media (max-width: 1024px){
-
+    /*Personal Setting page*/
+    .personal_form_in{
+        justify-content: space-between;
+    }
+    /*Personal Setting page End*/
     /* Aside right to blocks start */
     .fixed-aside{
         right: -18px;
@@ -52,7 +81,11 @@
 
 
 @media only screen and (max-width : 991px){
-
+    /*Personal Setting page*/
+    .remove_default_styles{
+        max-width: 100%
+    }
+    /*Personal Setting page end*/
     /* Banner */
     .banner {
         padding: 40px 50px;
@@ -82,8 +115,20 @@
 }
 
 
-@media only screen and (max-width : 767px){
+@media only screen and (max-width : 850px){
+    /*Personal Setting page */
+    .personal_content_lp label, .personal_content_rp label{
+        width: 350px;
+    }
+    /*Personal Setting page End*/
+}
 
+@media only screen and (max-width : 767px){
+    /*Personal Setting page */
+    .personal_content_lp label, .personal_content_rp label{
+        width: 300px;
+    }
+    /*Personal Setting page End*/
     /* Banner */
     .banner {
         padding: 30px;
@@ -256,8 +301,26 @@
 }
 
 
-@media (max-width:575px){
+@media only screen and (max-width : 635px){
+    /*Personal Setting page */
+    .personal_content_lp label, .personal_content_rp label{
+        width: 270px;
+    }
+    /*Personal Setting page End*/
+}
 
+
+@media (max-width:575px){
+    /*Personal Setting page */
+    .personal_content_lp label, .personal_content_rp label{
+        width: 100%;
+    }
+    .personal_form_in{
+        flex-direction: column;
+        width: 80%;
+        align-self: center;
+    }
+    /*Personal Setting page End*/
     /* Banner */
     .banner {
         padding: 25px;
@@ -289,8 +352,6 @@
     }
 
     /* Pages */
-
-
     /* Input form-search main */
     .form-search__wrap {
         display: block;
@@ -307,7 +368,10 @@
     .container{
         padding: 0 7px
     }
-
+    .row{
+        margin-right: 0;
+        margin-left: 0;
+    }
     /* Titles groups in layout */
     .entitled-group__controls{
         flex-wrap: wrap;
@@ -318,6 +382,17 @@
     .entitled-group__controls > span{
         padding-right: 20px;
     }
+    /*Personal Setting page */
+    .personal_photo_wrap{
+        margin: 0 auto 40px auto;
+    }
+    .personal_form_in{
+        width: 100%;
+    }
+    .personal_groups_in .news-group__item{
+        width: 100%;
+    }
+    /*Personal Setting page End */
 
     .container-resize {
         padding: 0;
@@ -325,7 +400,18 @@
 }
 
 
+@media only screen and (max-width : 340px){
+    .profile_photo_info{
+        width: 100%;
+    }
+    .personal_photo_wrap{
+        width: 100%;
+    }
+}
+
+
 @media only screen and (max-width : 320px){
 
 }
+
 
