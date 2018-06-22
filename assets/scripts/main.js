@@ -131,14 +131,28 @@ $(document).ready(function () {
         var h=d[g]('body')[0];
         h.appendChild(s);
     }})();
+
     // Datapicker
-    $('#js-date-picker').datepicker({
+    $('#js-date-picker, .js-date-picker').datepicker({
         changeYear: true,
         yearRange: "1950:2018",
         dateFormat: "dd/mm/yy"
     });
+
     // Clear Date value in date field
+    // $('.js-clear_date_field').click(function () {
+    //     $('#js-date-picker').val('');
+    // });
     $('.js-clear_date_field').click(function () {
-        $('#js-date-picker').val('');
+        $(this).next().val('');
+        return false
     });
+
+
+// Date changer (Events page)
+    $('.js-change_date_field').on('click', function () {
+        var prevInput = $(this).prev();
+        var nextInput = $(this).next();
+        $(this).before(nextInput).after(prevInput);
+    })
 });

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <title>Personal Settings</title>
+    <title>Partners</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -14,7 +14,7 @@
     <link href="./assets/styles/Bootstrap/bootstrap-grid.min.css" rel="stylesheet">
     <link href="./assets/styles/Slick/slick.css" rel="stylesheet">
     <link href="./assets/styles/Slick/slick-theme.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/styles/jQuery_Ui/jquery-ui-1.9.2.custom.min.css">
     <link href="./assets/styles/main.css" rel="stylesheet">
     <link href="./assets/styles/media.css" rel="stylesheet">
@@ -27,6 +27,7 @@
     <script src="assets/scripts/forms.js"></script>
     <script src="assets/scripts/tabs.js"></script>
     <script src="assets/scripts/file_loader.js"></script>
+    <script src="assets/scripts/modal.js"></script>
 </head>
 
 <body>
@@ -58,30 +59,30 @@
                     </div>
                     <div class="dropdown">
                         <button class="btn dropdown__button">
-									<span class="btn__label">
-										<span class="country-flag">
-											<span class="country-flag__item">RU</span>
-											<img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
-										</span>
-									</span>
+                            <span class="btn__label">
+                                <span class="country-flag">
+                                    <span class="country-flag__item">RU</span>
+                                    <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                </span>
+                            </span>
                             <span class="btn__label icon icon_caret"></span>
                         </button>
                         <ul class="actions-menu dropdown__content">
                             <li>
                                 <a href="#" class="actions-menu__link">
-											<span class="country-flag">
-												<span class="country-flag__item">EU</span>
-												<img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
-											</span>
+                                    <span class="country-flag">
+                                        <span class="country-flag__item">EU</span>
+                                        <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                    </span>
                                 </a>
                             </li>
                             <li class="actions-menu__divider"></li>
                             <li>
                                 <a href="#" class="actions-menu__link">
-											<span class="country-flag">
-												<span class="country-flag__item">FR</span>
-												<img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
-											</span>
+                                    <span class="country-flag">
+                                        <span class="country-flag__item">FR</span>
+                                        <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                    </span>
                                 </a>
                             </li>
                         </ul>
@@ -189,125 +190,93 @@
             </li>
         </ul>
         <div class="layout__content">
-            <div class="personal_setting_wrap">
-                <div class="personal_information">
-                    <div class="personal_photo_wrap">
-                        <div class="profile_photo_info">
-                            <img class="js-user-photo" src="assets/images/personal-photo.png" alt="">
-                        </div>
-                        <div class="profile_photo_actions">
-                            <button class="clear_photo_field">Remove</button>
-                            <button class="upload_photo-in">Upload</button>
-                            <label for="take_file" class="file_load_button">
-                                Browse...
-                                <input type="file" value="Browse..." id="take_file" >
-                            </label>
-                        </div>
-                    </div>
-                    <h4 class="home_titles">Personal settings</h4>
-                    <form method="GET" class="formWithValidation personal_content_field">
-                        <div class="personal_form_in">
-                            <div class="personal_content_lp">
-                                <label>
-                                    <span class="req_field">Name</span>
-                                    <input type="text" class="required">
-                                </label>
-                                <label>
-                                    <span class="req_field">Gender</span>
-                                    <input type="text" class="required">
-                                </label>
-                                <label>
-                                    <span>Nickname</span>
-                                    <input type="text">
-                                </label>
-                                <label>
-                                    <span>Country of residence</span>
-                                    <select name="country">
-                                        <option value="">Afganistan (+93)</option>
-                                        <option value="">Afganistan (+94)</option>
-                                        <option value="">Afganistan (+95)</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span class="req_field ">Email</span>
-                                    <input type="text" class="email required">
-                                    <span class="format_example">If you have changed your email address, write it here.</span>
-                                </label>
-                            </div>
-                            <div class="personal_content_rp">
-                                <label>
-                                    <span class="req_field">Surname</span>
-                                    <input type="text" class="required">
-                                </label>
-                                <label class="date_label">
-                                    <span class="req_field">Date of Birth</span>
-                                    <span class="date_select_wrap">
-                                        <span class="focus_date_field js-focus_date_field"><i class="fas fa-calendar-alt"></i></span>
-                                        <span class="clear_date_field js-clear_date_field"><i class="fas fa-times"></i></span>
-                                        <input id="js-date-picker" class="required">
-                                    </span>
-                                    <span class="format_example">Day / Month / Year</span>
-                                </label>
-                                <label>
-                                    <span>Show me like</span>
-                                    <select name="nickname">
-                                        <option value="">Nickname1</option>
-                                        <option value="">Nickname2</option>
-                                        <option value="">Nickname3</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span>City of residence</span>
-                                    <input type="text">
-                                </label>
-                                <label>
-                                    <span class="req_field">Phone number</span>
-                                    <input type="text" class="required">
-                                    <span class="format_example">For example: +33612345678</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="personal_content_change">
-                            <a href="#">Unsubscribe from our email list</a>
-                            <input type="submit" value="Send" class="send_btn">
-                        </div>
-                    </form>
+            <div class="partners_wrap">
+                <div class="partners_list">
+                    <ul>
+                        <li>
+                            <span>
+                                <img src="assets/images/temp/partners_1.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/temp/partners_2.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/temp/partners_3.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/temp/partners_4.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/temp/partners_5.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/temp/partners_6.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/temp/partners_7.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/temp/partners_8.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/temp/partners_1.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/temp/partners_2.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/temp/partners_3.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/temp/partners_4.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/temp/partners_5.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/temp/partners_6.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/temp/partners_7.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="assets/images/temp/partners_8.png" alt="">
+                            </span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="personal_groups">
-                    <div class="personal_group_preview">
-                        <button class="send_btn">Create new group</button>
-                        <h4 class="home_titles">GROUPS</h4>
-                    </div>
-                    <div class="personal_groups_in">
-                        <div class="news-card news-group__item">
-                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
-                            <div class="news-card__content">
-                                <a href="#" class="news-card__title">Name</a>
-                                <a href="#" class="label label_default news-card__label">Tag</a>
-                            </div>
-                        </div>
-                        <div class="news-card news-group__item">
-                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
-                            <div class="news-card__content">
-                                <a href="#" class="news-card__title">Name</a>
-                                <a href="#" class="label label_default news-card__label">Tag</a>
-                            </div>
-                        </div>
-                        <div class="news-card news-group__item">
-                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
-                            <div class="news-card__content">
-                                <a href="#" class="news-card__title">Name</a>
-                                <a href="#" class="label label_default news-card__label">Tag</a>
-                            </div>
-                        </div>
-                        <div class="news-card news-group__item">
-                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
-                            <div class="news-card__content">
-                                <a href="#" class="news-card__title">Name</a>
-                                <a href="#" class="label label_default news-card__label">Tag</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="become_partner">
+                    <button class="send_btn js-modal" data-href="#myModal">Become a partner</button>
                 </div>
             </div>
         </div>
@@ -360,10 +329,103 @@
                     </a>
                 </nav>
             </div>
+            <div id="myModal" class="modal__wrap">
+                <section class="modal__content">
+                    <div class="modal_title">
+                        Please fill in the application form for the partnership
+                    </div>
+                    <form method="GET" class="similar_form">
+                        <div class="partners_form_in">
+                            <div class="modal_left_side">
+                                <label>
+                                    <span class="req_field">Company</span>
+                                    <input type="text" class="required">
+                                </label>
+                                <label>
+                                    <span class="req_field">Association</span>
+                                    <input type="text" class="required">
+                                </label>
+                                <label>
+                                    <span class="req_field">Foundation</span>
+                                    <input type="text" class="required">
+                                </label>
+                                <label>
+                                    <span class="req_field">NGO</span>
+                                    <input type="text" class="required">
+                                </label>
+                                <label>
+                                    <span class="req_field">Project name</span>
+                                    <textarea class="required"></textarea>
+                                </label>
+                                <label>
+                                    <span class="req_field">Description (about your organization)</span>
+                                    <input type="text" class="required">
+                                </label>
+                                <label>
+                                    <span class="req_field">Country</span>
+                                    <input type="text" class="required">
+                                </label>
+                                <label>
+                                    <span class="req_field">Address</span>
+                                    <input type="text" class="required">
+                                </label>
+                                <label>
+                                    <span class="req_field">Index</span>
+                                    <input type="text" class="required">
+                                </label>
+                            </div>
+                            <div class="modal_right_side">
+                                <label>
+                                    <span class="req_field">Contact Name</span>
+                                    <input type="text" class="required">
+                                </label>
+                                <label>
+                                    <span class="req_field">Contact Surname</span>
+                                    <input type="text" class="required">
+                                </label>
+                                <label>
+                                    <span class="req_field">Contact Position</span>
+                                    <input type="text" class="required">
+                                </label>
+                                <label>
+                                    <span class="req_field">City Phone</span>
+                                    <input type="text" class="required">
+                                </label>
+                                <label>
+                                    <span class="req_field">Email</span>
+                                    <input type="text" class="email required">
+                                </label>
+                                <label>
+                                    <span class="req_field">URI</span>
+                                    <input type="text" class="required">
+                                </label>
+                                <label>
+                                    <span class="req_field">Why become a partner</span>
+                                    <textarea class="required"></textarea>
+                                </label>
+                                <div class="file-load">
+                                    <span class="req_field">Image File</span>
+                                    <input type="file" class=" load_file-target " id="load-file" data-multiple-caption="{count} files selected">
+                                    <label for="load-file" class="set_req">
+                                        <span class="cur_file-name">Select file...</span>
+                                        <span class="load_hint ">Upload file</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="partners_send_btn">
+                           <label >
+                               <input type="submit" value="Send" class="send_btn partners_form-send">
+                           </label>
+                       </div>
+                    </form>
+                </section>
+            </div>
         </div>
     </div>
+
 </footer>
-<div class="fixed-aside">
+<!--<div class="fixed-aside">
     <div class="slideout fixed-aside__item">
         <div class="slideout__btn slideout__btn_primary">
             <span class="slideout__btn-label">An error in the text?</span>
@@ -393,7 +455,7 @@
             </form>
         </div>
     </div>
-</div>
+</div>-->
 
 </body>
 

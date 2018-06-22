@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <title>Personal Settings</title>
+    <title>Settings Event</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -16,6 +16,7 @@
     <link href="./assets/styles/Slick/slick-theme.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/styles/jQuery_Ui/jquery-ui-1.9.2.custom.min.css">
+    <link href="./assets/styles/timePicker/jquery.timepicker.min.css" rel="stylesheet">
     <link href="./assets/styles/main.css" rel="stylesheet">
     <link href="./assets/styles/media.css" rel="stylesheet">
 
@@ -27,6 +28,7 @@
     <script src="assets/scripts/forms.js"></script>
     <script src="assets/scripts/tabs.js"></script>
     <script src="assets/scripts/file_loader.js"></script>
+    <script src="assets/scripts/timePicker/jquery.timepicker.min.js"></script>
 </head>
 
 <body>
@@ -179,137 +181,173 @@
             </div>
         </nav>
     </div>
-    <div class="container remove_default_styles">
+    <div class="container">
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
-                <a href="/" class="breadcrumbs__link">Главная</a>
+                <a href="/" class="breadcrumbs__link">Home</a>
             </li>
             <li class="breadcrumbs__item">
-                <span class="breadcrumbs__link breadcrumbs__link_static">Название страницы</span>
+                <a href="/" class="breadcrumbs__link">Events</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <span class="breadcrumbs__link breadcrumbs__link_static">Settings Event</span>
             </li>
         </ul>
-        <div class="layout__content">
-            <div class="personal_setting_wrap">
-                <div class="personal_information">
-                    <div class="personal_photo_wrap">
-                        <div class="profile_photo_info">
-                            <img class="js-user-photo" src="assets/images/personal-photo.png" alt="">
+        <div class="layout__content event__settings">
+            <h3 class="layout__title">Settings Event</h3>
+
+
+            <form method="GET" class="personal_content_field">
+                <div class="es__group upload__group">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-1">
+                            <span class="nowrap">Group Picture:</span>
                         </div>
-                        <div class="profile_photo_actions">
-                            <button class="clear_photo_field">Remove</button>
-                            <button class="upload_photo-in">Upload</button>
-                            <label for="take_file" class="file_load_button">
-                                Browse...
-                                <input type="file" value="Browse..." id="take_file" >
+                        <div class="col-7">
+                            <label for="file-1" class="es__load_box color-gray">
+                                Upload a picture:
+                                <i class="fas fa-upload"></i>
+                                <input type="file" id="file-1" class="take-file">
                             </label>
                         </div>
                     </div>
-                    <h4 class="home_titles">Personal settings</h4>
-                    <form method="GET" class="formWithValidation personal_content_field">
-                        <div class="personal_form_in">
-                            <div class="personal_content_lp">
-                                <label>
-                                    <span class="req_field">Name</span>
-                                    <input type="text" class="required">
-                                </label>
-                                <label>
-                                    <span class="req_field">Gender</span>
-                                    <input type="text" class="required">
-                                </label>
-                                <label>
-                                    <span>Nickname</span>
-                                    <input type="text">
-                                </label>
-                                <label>
-                                    <span>Country of residence</span>
-                                    <select name="country">
-                                        <option value="">Afganistan (+93)</option>
-                                        <option value="">Afganistan (+94)</option>
-                                        <option value="">Afganistan (+95)</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span class="req_field ">Email</span>
-                                    <input type="text" class="email required">
-                                    <span class="format_example">If you have changed your email address, write it here.</span>
-                                </label>
-                            </div>
-                            <div class="personal_content_rp">
-                                <label>
-                                    <span class="req_field">Surname</span>
-                                    <input type="text" class="required">
-                                </label>
-                                <label class="date_label">
-                                    <span class="req_field">Date of Birth</span>
-                                    <span class="date_select_wrap">
-                                        <span class="focus_date_field js-focus_date_field"><i class="fas fa-calendar-alt"></i></span>
-                                        <span class="clear_date_field js-clear_date_field"><i class="fas fa-times"></i></span>
-                                        <input id="js-date-picker" class="required">
-                                    </span>
-                                    <span class="format_example">Day / Month / Year</span>
-                                </label>
-                                <label>
-                                    <span>Show me like</span>
-                                    <select name="nickname">
-                                        <option value="">Nickname1</option>
-                                        <option value="">Nickname2</option>
-                                        <option value="">Nickname3</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span>City of residence</span>
-                                    <input type="text">
-                                </label>
-                                <label>
-                                    <span class="req_field">Phone number</span>
-                                    <input type="text" class="required">
-                                    <span class="format_example">For example: +33612345678</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="personal_content_change">
-                            <a href="#">Unsubscribe from our email list</a>
-                            <input type="submit" value="Send" class="send_btn">
-                        </div>
-                    </form>
                 </div>
-                <div class="personal_groups">
-                    <div class="personal_group_preview">
-                        <button class="send_btn">Create new group</button>
-                        <h4 class="home_titles">GROUPS</h4>
-                    </div>
-                    <div class="personal_groups_in">
-                        <div class="news-card news-group__item">
-                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
-                            <div class="news-card__content">
-                                <a href="#" class="news-card__title">Name</a>
-                                <a href="#" class="label label_default news-card__label">Tag</a>
-                            </div>
-                        </div>
-                        <div class="news-card news-group__item">
-                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
-                            <div class="news-card__content">
-                                <a href="#" class="news-card__title">Name</a>
-                                <a href="#" class="label label_default news-card__label">Tag</a>
-                            </div>
-                        </div>
-                        <div class="news-card news-group__item">
-                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
-                            <div class="news-card__content">
-                                <a href="#" class="news-card__title">Name</a>
-                                <a href="#" class="label label_default news-card__label">Tag</a>
-                            </div>
-                        </div>
-                        <div class="news-card news-group__item">
-                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
-                            <div class="news-card__content">
-                                <a href="#" class="news-card__title">Name</a>
-                                <a href="#" class="label label_default news-card__label">Tag</a>
+                <div class="es__group">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-1"></div>
+                        <div class="col-7">
+                            <div class="es_photo_box">
+                                <label for="file-2" class="es__load_box">
+                                    <i class="fas fa-camera"></i>
+                                    <input type="file" id="file-2" class="take-file">
+                                </label>
+                                <img class="js-user-photo" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="es__group">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-1">
+                            <span class="nowrap">Event Name:</span>
+                        </div>
+                        <div class="col-7">
+                            <label>
+                                <input type="text" class="required input">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="es__group">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-1">
+                            <span class="nowrap">Short Discussion:</span>
+                        </div>
+                        <div class="col-7">
+                            <label>
+                                <input type="text" class="input">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="es__group">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-1">
+                            <span class="nowrap">Locations:</span>
+                        </div>
+                        <div class="col-7">
+                            <label>
+                                <input type="text" class="input">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="es__group">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-1">
+                            <span class="nowrap">Starts:</span>
+                        </div>
+                        <div class="col-7">
+                            <div class="es_date_box d-flex align-items-center">
+                                <label>
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <input class="js-date-picker input">
+                                </label>
+                                <label>
+                                    <i class="fas fa-clock"></i>
+                                    <input class="js-time-picker input">
+                                </label>
+                                <span>
+                                    UTS +1
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="es__group">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-1">
+                            <span class="nowrap">Ends:</span>
+                        </div>
+                        <div class="col-7">
+                            <div class="es_date_box d-flex align-items-center">
+                                <label>
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <input class="js-date-picker input">
+                                </label>
+                                <label>
+                                    <i class="fas fa-clock"></i>
+                                    <input class="js-time-picker input">
+                                </label>
+                                <span>
+                                    UTS +1
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="es__group">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-8">
+                            <div class="radio-group group-required">
+                                <input type="radio" name="radio" class="required active">
+                                <input type="radio" name="radio" class="required">
+                                <input type="radio" name="radio" class="required">
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="col-7">
+                            <div class="es_date_box d-flex align-items-center">
+                                <label>
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <input class="js-date-picker input">
+                                </label>
+                                <label>
+                                    <i class="fas fa-clock"></i>
+                                    <input class="js-time-picker input">
+                                </label>
+                                <span>
+                                    UTS +1
+                                </span>
+                            </div>
+                        </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="personal_content_change">
+                    <input type="submit" class="btn btn_accent">
+                </div>
+
+            </form>
         </div>
     </div>
 </div>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <title>Nationsorg</title>
+    <title>Forum</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -14,6 +14,7 @@
     <link href="./assets/styles/Slick/slick.css" rel="stylesheet">
     <link href="./assets/styles/Slick/slick-theme.css" rel="stylesheet">
     <link href="./assets/styles/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/media.css">
 
     <script src="./assets/scripts/jQuery/jquery-3.3.1.min.js"></script>
     <script src="./assets/scripts/Slick/slick.min.js"></script>
@@ -50,30 +51,30 @@
                     </div>
                     <div class="dropdown">
                         <button class="btn dropdown__button">
-									<span class="btn__label">
-										<span class="country-flag">
-											<span class="country-flag__item">RU</span>
-											<img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
-										</span>
-									</span>
+                            <span class="btn__label">
+                                <span class="country-flag">
+                                    <span class="country-flag__item">RU</span>
+                                    <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                </span>
+                            </span>
                             <span class="btn__label icon icon_caret"></span>
                         </button>
                         <ul class="actions-menu dropdown__content">
                             <li>
                                 <a href="#" class="actions-menu__link">
-											<span class="country-flag">
-												<span class="country-flag__item">EU</span>
-												<img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
-											</span>
+                                    <span class="country-flag">
+                                        <span class="country-flag__item">EU</span>
+                                        <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                    </span>
                                 </a>
                             </li>
                             <li class="actions-menu__divider"></li>
                             <li>
                                 <a href="#" class="actions-menu__link">
-											<span class="country-flag">
-												<span class="country-flag__item">FR</span>
-												<img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
-											</span>
+                                    <span class="country-flag">
+                                        <span class="country-flag__item">FR</span>
+                                        <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                    </span>
                                 </a>
                             </li>
                         </ul>
@@ -171,96 +172,503 @@
             </div>
         </nav>
     </div>
-    <div class="container">
+    <div class="container remove_default_styles">
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
                 <a href="/" class="breadcrumbs__link">Language courses for city: Leon</a>
             </li>
         </ul>
         <div class="layout__content forum">
-            <div class="row">
-                <div class="col-12 col-lg-4 col-xl-4 d-flex align-items-center">
-                    <h3 class="layout__title">Language courses for city: <span>Leon</span></h3>
-                </div>
-                <div class="col-12 col-lg-8 col-xl-8">
-                    <div class="form-search__wrap">
-                        <input placeholder="Write down what do you want" class="field field_primary form-search__field" type="text" />
-                        <button class="btn btn_accent form-search__button">
-                            <span class="btn__label">Search</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <table class="table-content">
-                        <thead class="table-content_thead">
-                            <tr>
-                                <th>
-                                    <div class="table-content_title">
-                                        <span>Topic</span>
-                                        <span class="badge">3</span>
+            <div class="forum_wrap">
+                <div class="forum_table-mobile">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="table-content_title">
+                                    <span>Topic</span>
+                                    <span class="badge">3</span>
+                                </div>
+                                <div class="table-content_subtitle">
+                                    <span>Subtopic</span>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="#">Детские лечебные заведения</a>
+                                <span class="user-name-box">Модератор: <span class="user-name">Имя модератора</span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-content_title">
+                                    <span>Date</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-form-create">
+                                    <span>Создан:</span>
+                                    <span class="table-form-create_date">26.06.2016 00:24</span>
+                                </div>
+                                <div class="table-form-update">
+                                    <span>Обновлен:</span>
+                                    <span class="table-form-update_date">07.00.2018 10:19</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-content_title">
+                                    <span>Number of Topics</span>
+                                </div>
+                            </td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-content_title">
+                                    <span>Number of Posts</span>
+                                </div>
+                            </td>
+                            <td>
+                                1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-content_title">
+                                    <span>Last Post</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-content_text">
+                                    <div class="user-email">
+                                        <div class="form_show_details">info@nationsorg.com</div>
+                                        <div class="form_post_details">
+                                            <div class="form_posts_tp">
+                                                <div class="form_posts_user-preview">
+                                                    <img src="assets/images/forum_user_preview-default.png" alt="">
+                                                </div>
+                                                <div class="form_posts_user-link">
+                                                    <a href="info@nationsorg.com">info@nationsorg.com</a>
+                                                </div>
+                                            </div>
+                                            <div class="form_posts_mp">
+                                                <div class="table-form-create">
+                                                    <span>Создан:</span>
+                                                    <span class="table-form-create_date">26.06.2016 00:24</span>
+                                                </div>
+                                                <div class="table-form-update">
+                                                    <span>Обновлен:</span>
+                                                    <span class="table-form-update_date">07.00.2018 10:19</span>
+                                                </div>
+                                            </div>
+                                            <div class="form_posts_bp">
+                                                <span>Рейтинг активности:</span>
+                                                <span>14</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="table-content_subtitle">
-                                        <span>Subtopic</span>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div class="table-content_title">
-                                        <span>Date</span>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div class="table-content_title">
-                                        <span>Number of Topics</span>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div class="table-content_title">
-                                        <span>Number of Posts</span>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div class="table-content_title">
-                                        <span>Last Post</span>
-                                    </div>
-                                    <a href="#" class="btn btn_accent btn_table">
-                                        Watchlist
-                                    </a>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody class="table-content_tbody">
-                            <tr>
-                                <td>
-                                    <p>Детские лечебные заведения</p>
-                                    <span class="user-name-box">Модератор: <span class="user-name">Имя модератора</span></span>
-                                </td>
-                                <td>
-                                    <div class="table-form-create">
-                                        <span>Создан:</span>
-                                        <span class="table-form-create_date">26.06.2016 00:24</span>
-                                    </div>
-                                    <div class="table-form-update">
-                                        <span>Обновлен:</span>
-                                        <span class="table-form-update_date">07.00.2018 10:19</span>
-                                    </div>
-                                </td>
-                                <td>
-                                    <span>1</span>
-                                </td>
-                                <td>
-                                    <span>1</span>
-                                </td>
-                                <td>
-                                    <p class="table-content_text">
-                                        <span class="user-email">info@nationsorg.com</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium deleniti ea harum impedit necessitatibus nostrum officia porro quis quod voluptate.
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of
+                                        the printing and typesetting industry
                                     </p>
-                                    <span class="table-content_date-last-post">01.01.2018</span>
-                                </td>
-                            </tr>
+                                </div>
+                                <span class="table-content_date-last-post">01.01.2018</span>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="table-content_title">
+                                    <span>Topic</span>
+                                    <span class="badge">3</span>
+                                </div>
+                                <div class="table-content_subtitle">
+                                    <span>Subtopic</span>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="#">Детские лечебные заведения</a>
+                                <span class="user-name-box">Модератор: <span class="user-name">Имя модератора</span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-content_title">
+                                    <span>Date</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-form-create">
+                                    <span>Создан:</span>
+                                    <span class="table-form-create_date">26.06.2016 00:24</span>
+                                </div>
+                                <div class="table-form-update">
+                                    <span>Обновлен:</span>
+                                    <span class="table-form-update_date">07.00.2018 10:19</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-content_title">
+                                    <span>Number of Topics</span>
+                                </div>
+                            </td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-content_title">
+                                    <span>Number of Posts</span>
+                                </div>
+                            </td>
+                            <td>
+                                1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-content_title">
+                                    <span>Last Post</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-content_text">
+                                    <div class="user-email">
+                                        <div class="form_show_details">info@nationsorg.com</div>
+                                        <div class="form_post_details">
+                                            <div class="form_posts_tp">
+                                                <div class="form_posts_user-preview">
+                                                    <img src="assets/images/forum_user_preview-default.png" alt="">
+                                                </div>
+                                                <div class="form_posts_user-link">
+                                                    <a href="info@nationsorg.com">info@nationsorg.com</a>
+                                                </div>
+                                            </div>
+                                            <div class="form_posts_mp">
+                                                <div class="table-form-create">
+                                                    <span>Создан:</span>
+                                                    <span class="table-form-create_date">26.06.2016 00:24</span>
+                                                </div>
+                                                <div class="table-form-update">
+                                                    <span>Обновлен:</span>
+                                                    <span class="table-form-update_date">07.00.2018 10:19</span>
+                                                </div>
+                                            </div>
+                                            <div class="form_posts_bp">
+                                                <span>Рейтинг активности:</span>
+                                                <span>14</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of
+                                        the printing and typesetting industry
+                                    </p>
+                                </div>
+                                <span class="table-content_date-last-post">01.01.2018</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="forum_table-desktop">
+                    <div class="row">
+                        <div class="col-12 col-lg-4 col-xl-4 d-flex align-items-center">
+                            <h3 class="layout__title">Language courses for city: <span>Leon</span></h3>
+                        </div>
+                        <div class="col-12 col-lg-8 col-xl-8">
+                            <div class="form-search__wrap">
+                                <input placeholder="Write down what do you want" class="field field_primary form-search__field" type="text" />
+                                <button class="btn btn_accent form-search__button">
+                                    <span class="btn__label">Search</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <table class="table-content">
+                                <thead class="table-content_thead">
+                                <tr>
+                                    <th>
+                                        <div class="table-content_title">
+                                            <span>Topic</span>
+                                            <span class="badge">3</span>
+                                        </div>
+                                        <div class="table-content_subtitle">
+                                            <span>Subtopic</span>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="table-content_title">
+                                            <span>Date</span>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="table-content_title">
+                                            <span>Number of Topics</span>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="table-content_title">
+                                            <span>Number of Posts</span>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="table-content_title">
+                                            <span>Last Post</span>
+                                        </div>
+                                        <a href="#" class="btn btn_accent btn_table">
+                                            Watchlist
+                                        </a>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody class="table-content_tbody">
+                                <tr>
+                                    <td>
+                                        <a href="#">Детские лечебные заведения</a>
+                                        <span class="user-name-box">Модератор: <span class="user-name">Имя модератора</span></span>
+                                    </td>
+                                    <td>
+                                        <div class="table-form-create">
+                                            <span>Создан:</span>
+                                            <span class="table-form-create_date">26.06.2016 00:24</span>
+                                        </div>
+                                        <div class="table-form-update">
+                                            <span>Обновлен:</span>
+                                            <span class="table-form-update_date">07.00.2018 10:19</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>1</span>
+                                    </td>
+                                    <td>
+                                        <span>1</span>
+                                    </td>
+                                    <td>
+                                        <div class="table-content_text">
+                                            <div class="user-email">
+                                                <div class="form_show_details">info@nationsorg.com</div>
+                                                <div class="form_post_details">
+                                                    <div class="form_posts_tp">
+                                                        <div class="form_posts_user-preview">
+                                                            <img src="assets/images/forum_user_preview-default.png" alt="">
+                                                        </div>
+                                                        <div class="form_posts_user-link">
+                                                            <a href="info@nationsorg.com">info@nationsorg.com</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form_posts_mp">
+                                                        <div class="table-form-create">
+                                                            <span>Создан:</span>
+                                                            <span class="table-form-create_date">26.06.2016 00:24</span>
+                                                        </div>
+                                                        <div class="table-form-update">
+                                                            <span>Обновлен:</span>
+                                                            <span class="table-form-update_date">07.00.2018 10:19</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form_posts_bp">
+                                                        <span>Рейтинг активности:</span>
+                                                        <span>14</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Lorem Ipsum is simply dummy text of
+                                                the printing and typesetting industry
+                                            </p>
+                                        </div>
+                                        <span class="table-content_date-last-post">01.01.2018</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">Детские лечебные заведения</a>
+                                        <span class="user-name-box">Модератор: <span class="user-name">Имя модератора</span></span>
+                                    </td>
+                                    <td>
+                                        <div class="table-form-create">
+                                            <span>Создан:</span>
+                                            <span class="table-form-create_date">26.06.2016 00:24</span>
+                                        </div>
+                                        <div class="table-form-update">
+                                            <span>Обновлен:</span>
+                                            <span class="table-form-update_date">07.00.2018 10:19</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>1</span>
+                                    </td>
+                                    <td>
+                                        <span>1</span>
+                                    </td>
+                                    <td>
+                                        <div class="table-content_text">
+                                            <div class="user-email">
+                                                <div class="form_show_details">info@nationsorg.com</div>
+                                                <div class="form_post_details">
+                                                    <div class="form_posts_tp">
+                                                        <div class="form_posts_user-preview">
+                                                            <img src="assets/images/forum_user_preview-default.png" alt="">
+                                                        </div>
+                                                        <div class="form_posts_user-link">
+                                                            <a href="info@nationsorg.com">info@nationsorg.com</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form_posts_mp">
+                                                        <div class="table-form-create">
+                                                            <span>Создан:</span>
+                                                            <span class="table-form-create_date">26.06.2016 00:24</span>
+                                                        </div>
+                                                        <div class="table-form-update">
+                                                            <span>Обновлен:</span>
+                                                            <span class="table-form-update_date">07.00.2018 10:19</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form_posts_bp">
+                                                        <span>Рейтинг активности:</span>
+                                                        <span>14</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                Accusantium deleniti ea harum impedit necessitatibus nostrum
+                                                officia porro quis quod voluptate.
+                                            </p>
+                                        </div>
+                                        <span class="table-content_date-last-post">01.01.2018</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">Детские лечебные заведения</a>
+                                        <span class="user-name-box">Модератор: <span class="user-name">Имя модератора</span></span>
+                                    </td>
+                                    <td>
+                                        <div class="table-form-create">
+                                            <span>Создан:</span>
+                                            <span class="table-form-create_date">26.06.2016 00:24</span>
+                                        </div>
+                                        <div class="table-form-update">
+                                            <span>Обновлен:</span>
+                                            <span class="table-form-update_date">07.00.2018 10:19</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>1</span>
+                                    </td>
+                                    <td>
+                                        <span>1</span>
+                                    </td>
+                                    <td>
+                                        <div class="table-content_text">
+                                            <div class="user-email">
+                                                <div class="form_show_details">info@nationsorg.com</div>
+                                                <div class="form_post_details">
+                                                    <div class="form_posts_tp">
+                                                        <div class="form_posts_user-preview">
+                                                            <img src="assets/images/forum_user_preview-default.png" alt="">
+                                                        </div>
+                                                        <div class="form_posts_user-link">
+                                                            <a href="info@nationsorg.com">info@nationsorg.com</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form_posts_mp">
+                                                        <div class="table-form-create">
+                                                            <span>Создан:</span>
+                                                            <span class="table-form-create_date">26.06.2016 00:24</span>
+                                                        </div>
+                                                        <div class="table-form-update">
+                                                            <span>Обновлен:</span>
+                                                            <span class="table-form-update_date">07.00.2018 10:19</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form_posts_bp">
+                                                        <span>Рейтинг активности:</span>
+                                                        <span>14</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                Accusantium deleniti ea harum impedit necessitatibus nostrum
+                                                officia porro quis quod voluptate.
+                                            </p>
+                                        </div>
+                                        <span class="table-content_date-last-post">01.01.2018</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">Детские лечебные заведения</a>
+                                        <span class="user-name-box">Модератор: <span class="user-name">Имя модератора</span></span>
+                                    </td>
+                                    <td>
+                                        <div class="table-form-create">
+                                            <span>Создан:</span>
+                                            <span class="table-form-create_date">26.06.2016 00:24</span>
+                                        </div>
+                                        <div class="table-form-update">
+                                            <span>Обновлен:</span>
+                                            <span class="table-form-update_date">07.00.2018 10:19</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span>1</span>
+                                    </td>
+                                    <td>
+                                        <span>1</span>
+                                    </td>
+                                    <td>
+                                        <div class="table-content_text">
+                                            <div class="user-email">
+                                                <div class="form_show_details">info@nationsorg.com</div>
+                                                <div class="form_post_details">
+                                                    <div class="form_posts_tp">
+                                                        <div class="form_posts_user-preview">
+                                                            <img src="assets/images/forum_user_preview-default.png" alt="">
+                                                        </div>
+                                                        <div class="form_posts_user-link">
+                                                            <a href="info@nationsorg.com">info@nationsorg.com</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form_posts_mp">
+                                                        <div class="table-form-create">
+                                                            <span>Создан:</span>
+                                                            <span class="table-form-create_date">26.06.2016 00:24</span>
+                                                        </div>
+                                                        <div class="table-form-update">
+                                                            <span>Обновлен:</span>
+                                                            <span class="table-form-update_date">07.00.2018 10:19</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form_posts_bp">
+                                                        <span>Рейтинг активности:</span>
+                                                        <span>14</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                Accusantium deleniti ea harum impedit necessitatibus nostrum
+                                                officia porro quis quod voluptate.
+                                            </p>
+                                        </div>
+                                        <span class="table-content_date-last-post">01.01.2018</span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -316,7 +724,7 @@
         </div>
     </div>
 </footer>
-<div class="fixed-aside">
+<!--<div class="fixed-aside">
     <div class="slideout fixed-aside__item">
         <div class="slideout__btn slideout__btn_primary">
             <span class="slideout__btn-label">An error in the text?</span>
@@ -346,7 +754,7 @@
             </form>
         </div>
     </div>
-</div>
+</div>-->
 
 </body>
 

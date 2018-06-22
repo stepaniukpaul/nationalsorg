@@ -30,4 +30,65 @@ $(document).ready(function () {
     $('.clear_photo_field').on('click',function () {
         $('.js-user-photo').attr('src', 'assets/images/personal-photo.png');
     });
+
+    $('#req_field').on('change',function () {
+        var files = fileInput.files;
+
+        for (var i = 0; i < files.length; i++) {
+            alert("Filename " + files[i].name);
+        }
+    });
+
+    //    File name
+
+    /*
+        Получаем и записываем имя картинки в span
+
+        Для этого делаем такую структуру
+
+        <div class="file-load">
+            <span class="req_field">Image File</span>
+            <input type="file" class=" load_file-target " id="YOUR ID" data-multiple-caption="{count} files selected" >
+            <label for="YOUR ID" class="set_req">
+                <span class="cur_file-name">Select file...</span>
+            </label>
+        </div>
+
+        В переменную inputs добавляем свой класс что бы данные выбирались именно с него
+        Атрибут data-multiple-caption обязательный , а так же не забыть поменять ай
+    */
+    var inputs = $( '.load_file-target' );
+    Array.prototype.forEach.call( inputs, function( input )
+    {
+        var label	 = input.nextElementSibling,
+            labelVal = label.innerHTML;
+        input.addEventListener( 'change', function( e ){
+            var fileName = '';
+            if( this.files && this.files.length > 1 ){
+                fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+            }
+            else
+                fileName = e.target.value.split( '\\' ).pop();
+
+            if( fileName ){
+                label.querySelector( 'span' ).innerHTML = fileName;
+            }
+
+            else{
+                label.innerHTML = labelVal;
+            }
+        });
+    });
+    /*Проверка , и добавление класса required если не был загружен файл (логотип компании)
+        если файл не был выбран и остается дефолтное значение тега span , то добавляем класс required , что
+        указывает пользователю на то что пропущенно обязательное поле
+    */
+    $('.partners_form-send').on('click',function () {
+        if( $('.cur_file-name').text() == 'Select file...'){
+            $('.set_req').addClass('required');
+        }else{
+            $('.set_req').removeClass('required');
+        }
+    })
+
 });

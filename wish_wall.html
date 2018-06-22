@@ -179,7 +179,7 @@
             </div>
         </nav>
     </div>
-    <div class="container remove_default_styles">
+    <div class="container media_edit">
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
                 <a href="/" class="breadcrumbs__link">Главная</a>
@@ -195,22 +195,338 @@
                     <form method="GET">
                         <label>
                             <span class="req_field">Name</span>
-                            <input type="text">
+                            <input type="text" class="required">
                         </label>
                         <label>
                             <span class="req_field">Email</span>
-                            <input type="text">
+                            <input type="text" class="email required">
                         </label>
                         <label>
                             <span class="req_field">Wishes</span>
                             <textarea class='message required'></textarea>
                         </label>
-                        <div class="captcha"></div>
-
+                        <div class="recaptcha_wrap">
+                            <img src="assets/images/temp/recaptcha.png" alt="recaptcha">
+                        </div>
+                        <div class="form_send_section">
+                            <input type="submit" class="send_btn" value="Cancel">
+                            <input type="submit" class="validateBtn preEv send_btn" value="Send">
+                        </div>
                     </form>
                 </div>
                 <div class="wish_wall_massage">
-
+                    <span class="home_titles">
+                        sent Mail
+                    </span>
+                    <div class="wishes_wrap">
+                        <ul class="wishes_list">
+                            <li>
+                               <ul class="wishes_list_in">
+                                   <li>
+                                       <span>
+                                           Name:
+                                       </span>
+                                   </li>
+                                   <li>
+                                       <span>
+                                           Loren Ipsum
+                                       </span>
+                                   </li>
+                               </ul>
+                            </li>
+                            <li>
+                                <ul class="wishes_list_in">
+                                    <li>
+                                       <span>
+                                           Date of creation:
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <span>
+                                           01.01.2018   20:33
+                                       </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="wishes_list_in">
+                                    <li>
+                                       <span>
+                                           E-mail:
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <span>
+                                           mail@gmail.com
+                                       </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="wishes_list_in">
+                                    <li>
+                                       <span>
+                                           Wishes:
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <p>
+                                           Loren Ipsum lorem300
+                                       </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="wishes_list">
+                            <li>
+                                <ul class="wishes_list_in">
+                                    <li>
+                                       <span>
+                                           Name:
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <span>
+                                           Loren Ipsum
+                                       </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="wishes_list_in">
+                                    <li>
+                                       <span>
+                                           Date of creation:
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <span>
+                                           01.01.2018   20:33
+                                       </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="wishes_list_in">
+                                    <li>
+                                       <span>
+                                           E-mail:
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <span>
+                                           mail@gmail.com
+                                       </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="wishes_list_in">
+                                    <li>
+                                       <span>
+                                           Wishes:
+                                       </span>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Loren Ipsum lorem300
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="wishes_list">
+                            <li>
+                                <ul class="wishes_list_in">
+                                    <li>
+                                       <span>
+                                           Name:
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <span>
+                                           Loren Ipsum
+                                       </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="wishes_list_in">
+                                    <li>
+                                       <span>
+                                           Date of creation:
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <span>
+                                           01.01.2018   20:33
+                                       </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="wishes_list_in">
+                                    <li>
+                                       <span>
+                                           E-mail:
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <span>
+                                           mail@gmail.com
+                                       </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="wishes_list_in">
+                                    <li>
+                                       <span>
+                                           Wishes:
+                                       </span>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Loren Ipsum lorem300
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="wishes_list">
+                            <li>
+                                <ul class="wishes_list_in">
+                                    <li>
+                                       <span>
+                                           Name:
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <span>
+                                           Loren Ipsum
+                                       </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="wishes_list_in">
+                                    <li>
+                                       <span>
+                                           Date of creation:
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <span>
+                                           01.01.2018   20:33
+                                       </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="wishes_list_in">
+                                    <li>
+                                       <span>
+                                           E-mail:
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <span>
+                                           mail@gmail.com
+                                       </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="wishes_list_in">
+                                    <li>
+                                       <span>
+                                           Wishes:
+                                       </span>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Loren Ipsum lorem300
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="wishes_list">
+                            <li>
+                                <ul class="wishes_list_in">
+                                    <li>
+                                       <span>
+                                           Name:
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <span>
+                                           Loren Ipsum
+                                       </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="wishes_list_in">
+                                    <li>
+                                       <span>
+                                           Date of creation:
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <span>
+                                           01.01.2018   20:33
+                                       </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="wishes_list_in">
+                                    <li>
+                                       <span>
+                                           E-mail:
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <span>
+                                           mail@gmail.com
+                                       </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="wishes_list_in">
+                                    <li>
+                                       <span>
+                                           Wishes:
+                                       </span>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Loren Ipsum lorem300
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="wishes_pagination">
+                       <li>
+                           <a href="#">
+                            <i class="fas fa-caret-left"></i>
+                           </a>
+                       </li>
+                       <li class="active_wish_page"><a href="#">1</a></li>
+                       <li><a href="#">2</a></li>
+                       <li><a href="#">3</a></li>
+                       <li><a href="#">4</a></li>
+                       <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-caret-right"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
