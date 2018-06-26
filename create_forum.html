@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <title>Settings Event</title>
+    <title>Create Forum</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -16,7 +16,6 @@
     <link href="./assets/styles/Slick/slick-theme.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/styles/jQuery_Ui/jquery-ui-1.9.2.custom.min.css">
-    <link href="./assets/styles/timePicker/jquery.timepicker.min.css" rel="stylesheet">
     <link href="./assets/styles/main.css" rel="stylesheet">
     <link href="./assets/styles/media.css" rel="stylesheet">
 
@@ -24,11 +23,13 @@
     <script src="assets/scripts/jQuery/jquery-ui-1.9.2.custom.min.js"></script>
     <script src="./assets/scripts/Slick/slick.min.js"></script>
     <script src="./assets/scripts/clocks.js"></script>
-    <script src="./assets/scripts/main.js"></script>
+    <!--НЕ ДОБАВЛЯТЬ ЭТОТ СКРПИТ НА СТРАНИЦЫ ГДЕ ОН НЕ НУЖЕН-->
+    <script src="./assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/fontawesome-all.js"></script>
     <script src="assets/scripts/forms.js"></script>
     <script src="assets/scripts/tabs.js"></script>
     <script src="assets/scripts/file_loader.js"></script>
-    <script src="assets/scripts/timePicker/jquery.timepicker.min.js"></script>
+    <script src="assets/scripts/tinymce/tinymce.min.js"></script>
+    <script src="./assets/scripts/main.js"></script>
 </head>
 
 <body>
@@ -181,167 +182,84 @@
             </div>
         </nav>
     </div>
-    <div class="container">
+    <div class="container remove_default_styles">
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
-                <a href="/" class="breadcrumbs__link">Home</a>
+                <a href="/" class="breadcrumbs__link">Главная</a>
             </li>
             <li class="breadcrumbs__item">
-                <a href="/" class="breadcrumbs__link">Events</a>
-            </li>
-            <li class="breadcrumbs__item">
-                <span class="breadcrumbs__link breadcrumbs__link_static">Settings Event</span>
+                <span class="breadcrumbs__link breadcrumbs__link_static">Название страницы</span>
             </li>
         </ul>
-        <div class="layout__content event__settings">
-            <h3 class="layout__title">Settings Event</h3>
-            <form method="GET">
-                <div class="es__group upload__group">
-                    <div class="row d-flex flex-column flex-md-row align-items-md-center">
-                        <div class="p-0 col-2 col-lg- col-xl-1">
-                            <span class="nowrap">Group Picture:</span>
-                        </div>
-                        <div class="p-0 col-12 col-md-7">
-                            <label for="file-1" class="es__load_box color-gray">
-                                Upload a picture:
-                                <i class="fas fa-upload"></i>
-                                <input type="file" id="file-1" class="take-file">
+        <div class="layout__content">
+            <div class="create_forum_wrap">
+                <form method="GET" class="similar_form">
+                    <label>
+                        <span class="req_field">Title</span>
+                        <input type="text" class="required">
+                    </label>
+                    <label>
+                        <span class="req_field">Short Description:</span>
+                        <input type="text" class="required">
+                    </label>
+                    <div class="forum_editable_field">
+                        <div class="tiny_mce_wrap">
+                            <div class="file_load_icons">
+                                <label class="load_video">
+                                    <i class="fas fa-video"></i>
+                                    <input type="file" id="forum-load_vid" >
+                                </label>
+                                <label class="load_picture">
+                                    <i class="fas fa-image"></i>
+                                    <input type="file" id="forum-load_pict" >
+                                </label>
+                            </div>
+                            <label class="tiny_mce_label">
+                                <span class="req_field">Full Description:</span>
+                                <textarea class="required js-tinymce js-empty_check"></textarea>
                             </label>
                         </div>
+                        <div class="editable_field-info">
+                            <ul>
+                                <li>
+                                    Uploaded
+                                </li>
+                                <li>
+                                    <span class="info_file-name form_js-vid_name">Name</span>
+                                    <span class="info_file-size form_js-vid_size">100</span>
+                                    <span class="info_file-mb">mb</span>
+                                </li>
+                                <li>
+                                    <span class="info_file-name form_js-img_name">Name</span>
+                                    <span class="info_file-size form_js-img_size">15</span>
+                                    <span class="info_file-mb">mb</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="es__group">
-                    <div class="row d-flex flex-column flex-md-row align-items-md-center">
-                        <div class="p-0 col-2 col-xl-1"></div>
-                        <div class="p-0 col-12 col-md-10">
-                            <div class="es_photo_box">
-                                <label for="file-2" class="es__load_box">
-                                    <i class="fas fa-camera"></i>
-                                    <input type="file" id="file-2" class="take-file">
-                                </label>
-                                <img class="js-user-photo" alt="">
+                    <div class="select_icon-wrap">
+                        <label>
+                            <span class="req_field">Icon:</span>
+                            <span class="send_btn js_icon-switcher js_choice-icon icon_in">Select the icon</span>
+                        </label>
+                        <div class="select_icon_popup">
+                            <div class="close_popup_button">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <div class="icon_popup_content">
+                                <div class="icon_popup_title">
+                                    Click to choice
+                                </div>
+                                <div class="icon_list" id="js_icon-wrap">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="es__group">
-                    <div class="row d-flex flex-column flex-md-row align-items-md-center">
-                        <div class="p-0 col-2 col-lg- col-xl-1">
-                            <span class="nowrap">Event Name:</span>
-                        </div>
-                        <div class="p-0 col-12 col-md-7">
-                            <label>
-                                <input type="text" class="required input" placeholder="Add a short, clear name">
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="es__group">
-                    <div class="row d-flex flex-column flex-md-row align-items-md-center">
-                        <div class="p-0 col-2 col-lg- col-xl-1">
-                            <span class="nowrap">Short Discussion:</span>
-                        </div>
-                        <div class="p-0 col-12 col-md-7">
-                            <label>
-                                <input type="text" class="input">
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="es__group">
-                    <div class="row d-flex flex-column flex-md-row align-items-md-center">
-                        <div class="p-0 col-2 col-lg- col-xl-1">
-                            <span class="nowrap">Locations:</span>
-                        </div>
-                        <div class="p-0 col-12 col-md-7">
-                            <label>
-                                <input type="text" class="input" placeholder="Include a place or address">
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="es__group">
-                    <div class="row d-flex flex-column flex-md-row align-items-md-center">
-                        <div class="p-0 col-2 col-lg- col-xl-1">
-                            <span class="nowrap">Starts:</span>
-                        </div>
-                        <div class="p-0 col-12 col-md-7">
-                            <div class="es_date_box d-flex align-items-center">
-                                <label>
-                                    <i class="fas fa-calendar-alt"></i>
-                                    <input class="js-date-picker input">
-                                </label>
-                                <label>
-                                    <i class="fas fa-clock"></i>
-                                    <input class="js-time-picker input">
-                                </label>
-                                <span>
-                                    UTS +1
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="es__group">
-                    <div class="row d-flex flex-column flex-md-row align-items-md-center">
-                        <div class="p-0 col-2 col-lg- col-xl-1">
-                            <span class="nowrap">Ends:</span>
-                        </div>
-                        <div class="p-0 col-12 col-md-7">
-                            <div class="es_date_box d-flex align-items-center">
-                                <label>
-                                    <i class="fas fa-calendar-alt"></i>
-                                    <input class="js-date-picker input">
-                                </label>
-                                <label>
-                                    <i class="fas fa-clock"></i>
-                                    <input class="js-time-picker input">
-                                </label>
-                                <span>
-                                    UTS +1
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="es__group">
-                    <div class="row d-flex flex-column flex-md-row align-items-md-center">
-                        <div class="p-0 col-12">
-                            <div class="radio-group group-required">
-                                <label>
-                                    <span class="btn active">Just once</span>
-                                    <input type="radio" name="radio" class="required" checked>
-                                </label>
-                                <label>
-                                    <span class="btn">Every week</span>
-                                    <input type="radio" name="radio" class="required">
-                                </label>
-                                <label>
-                                    <span class="btn">Every 2 week</span>
-                                    <input type="radio" name="radio" class="required">
-                                </label>
-                                <label>
-                                    <span class="btn">Every month</span>
-                                    <input type="radio" name="radio" class="required">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="es__group">
-                    <div class="row d-flex align-items-start">
-                        <div class="p-0 col-2 col-lg- col-xl-1">
-                            <span class="nowrap es__span">Discussion:</span>
-                        </div>
-                        <div class="p-0 col-12 col-md-7">
-                            <label>
-                                <textarea class="input" maxlength="300" placeholder="Tell people more about the event"></textarea>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <input type="submit" value="Settings Event" class="btn btn_accent">
-            </form>
+                    <label class="forum_save_info">
+                        <input value="Save" type="submit" class="send_btn js-validateBtn">
+                    </label>
+                </form>
+            </div>
         </div>
     </div>
 </div>

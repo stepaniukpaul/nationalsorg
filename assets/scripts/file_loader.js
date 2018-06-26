@@ -23,7 +23,7 @@ $(document).ready(function () {
         }
     }
     //When field have change call function readURL
-    $('#take_file').change(function () {
+    $('#take_file, .take-file').change(function () {
         readURL(this);
     });
     // Remove photo from preview and change on default image
@@ -55,7 +55,7 @@ $(document).ready(function () {
         </div>
 
         В переменную inputs добавляем свой класс что бы данные выбирались именно с него
-        Атрибут data-multiple-caption обязательный , а так же не забыть поменять ай
+        Атрибут data-multiple-caption обязательный , а так же не забыть поменять айди
     */
     var inputs = $( '.load_file-target' );
     Array.prototype.forEach.call( inputs, function( input )
@@ -67,17 +67,43 @@ $(document).ready(function () {
             if( this.files && this.files.length > 1 ){
                 fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
             }
-            else
+            else{
                 fileName = e.target.value.split( '\\' ).pop();
-
+            }
             if( fileName ){
                 label.querySelector( 'span' ).innerHTML = fileName;
+
             }
 
             else{
                 label.innerHTML = labelVal;
             }
         });
+    });
+    /*
+        Получаем данные из полей type file и выводим эти данны(размер, имя) файла на странице
+       */
+
+    $('#forum-load_vid').change(function () {
+        var name = this.files[0].name;
+        var size = this.files[0].size;
+        if(size < 1024){
+            $('.form_js-vid_size').text('0.' + Math.round(size));
+        }else{
+            $('.form_js-vid_size').text( Math.round(size / 1024) / 1000);
+        }
+       $('.form_js-vid_name').text(name);
+    });
+
+    $('#forum-load_pict').change(function () {
+        var name = this.files[0].name;
+        var size = Math.round(this.files[0].size);
+        if(size < 1024){
+            $('.form_js-vid_size').text('0.' + Math.round(size));
+        }else{
+            $('.form_js-img_size').text( Math.round(size / 1024) / 1000);
+        }
+        $('.form_js-img_name').text(name);
     });
     /*Проверка , и добавление класса required если не был загружен файл (логотип компании)
         если файл не был выбран и остается дефолтное значение тега span , то добавляем класс required , что
@@ -89,6 +115,5 @@ $(document).ready(function () {
         }else{
             $('.set_req').removeClass('required');
         }
-    })
-
+    });
 });
