@@ -2,24 +2,33 @@
     .container {
         max-width: 1230px;
     }
+    .weather img{
+        max-width: 100%;
+        height: auto;
+    }
 }
-
-
 @media (min-width: 1200px){
     .container {
         width: auto;
     }
 }
-
-
 @media (max-width:1289px){
-
     /* Banner */
     .banner__label {
         font-size: 160px;
     }
 
     /* Clock and wether wrapper */
+    .weather img{
+        max-width: 100%;
+        height: auto;
+    }
+    .clock-group .clock.clock-group__item:first-child{
+        margin-left: 0;
+    }
+    .clock-group .clock.clock-group__item:last-child{
+        margin-right: 0;
+    }
     .widgets {
         margin-top: 15px;
         -ms-flex-order: 2;
@@ -30,10 +39,36 @@
     .fixed-aside__item {
         margin-bottom: 40px;
     }
+    /*Partners Page*/
+    .partners_wrap{
+        flex-direction: column-reverse;
+    }
+    .partners_list{
+        width: 100%;
+    }
+    .become_partner{
+        margin-bottom: 40px;
+        align-self: flex-end;
+    }
+    .partners_list ul li{
+        margin-right: 0;
+    }
+    .partners_list ul{
+        justify-content: space-between;
+    }
+    /*Partners Page End*/
+}
+@media only screen and (max-width : 1200px){
+    /*Forum page*/
+    .layout__title{
+        font-size: 16px;
+    }
+    /*Forum page End*/
 }
 
 
-@media only screen and (max-width : 1200px){
+@media only screen and (max-width : 1199px){
+
     /*Personal Setting page*/
     .personal_setting_wrap{
         flex-wrap: wrap;
@@ -60,9 +95,13 @@
         padding-top: 60px;
     }
     /*Personal Setting page end*/
+
+    /* Event Settings page */
+    .es__group > div > div:nth-child(2) {
+        margin-left: 0;
+    }
+    /* Event Settings page end*/
 }
-
-
 @media (max-width: 1024px){
     /*Personal Setting page*/
     .personal_form_in{
@@ -78,9 +117,32 @@
         min-width: 40px;
     }
 }
-
-
 @media only screen and (max-width : 991px){
+    /*Forum page*/
+    .form_post_details{
+        left: -58px;
+    }
+    /*Forum End*/
+    /*Forum2 page*/
+    .forum2 .layout__title {
+        margin-bottom: 20px;
+    }
+
+    .forum .btn_table {
+        padding: 0;
+        height: 28px;
+        line-height: 28px;
+        min-width: 68px;
+    }
+    /*Forum2 End*/
+    /*Partners Page*/
+    .partners_list ul li{
+        width: 21%
+    }
+    .modal__wrap{
+        width: 800px;
+    }
+    /*Partners Page End*/
     /*Personal Setting page*/
     .remove_default_styles{
         max-width: 100%
@@ -101,7 +163,6 @@
     }
 
     /* Event page */
-
     .event__details ul {
         margin-top: 40px;
     }
@@ -110,20 +171,143 @@
         width: 450px;
         margin-bottom: 30px;
     }
-
     /* Event page end*/
+     /*Wish wall page*/
+    .wish_wall_form{
+        align-self: center;
+        max-width: 100%;
+    }
+    /*Wish wall page end*/
+
+    /* Events page */
+    .events .table-content .date-box {
+        position: relative;
+    }
+
+    .events .table-content .date-box>span {
+        position: absolute;
+        right: 3px;
+        top: 12px;
+        transform: rotate(90deg);
+        padding: 13px 0;
+        width: 30px;
+    }
+
+    /* Event Settings page */
+    .es_photo_box {
+        width: 100%;
+    }
+
+    .event__settings .layout__title {
+        margin-bottom: 30px;
+    }
+    /* Event Settings page end*/
+
+    .events .table-content .date-box>label {
+        width: 140px;
+    }
+
+    .events .table-content .date-box>label:last-child {
+        margin-top: 5px;
+    }
+
+    .events .table-content_thead th:first-child {
+        width: 5.4%;
+    }
+
+    .events .table-content_thead th:nth-child(2),
+    .events .table-content_thead th:nth-child(3) {
+        width: 18.9%;
+    }
+
+    .events .table-content_thead th:nth-child(4),
+    .events .table-content_thead th:last-child {
+        width: 28.4%;
+    }
+
+    /* Events page end */
+    /*Create forum page*/
+    .select_icon_popup{
+        width: 738px;
+        left: 0;
+    }
+    /*Create forum page End*/
 }
-
-
 @media only screen and (max-width : 850px){
     /*Personal Setting page */
     .personal_content_lp label, .personal_content_rp label{
         width: 350px;
     }
     /*Personal Setting page End*/
-}
+    /*Partners Page*/
 
+    .modal__wrap{
+        width: 740px;
+        padding: 55px 55px 65px 55px;
+    }
+    /*Partners Page End*/
+
+
+}
+@media only screen and (max-width : 768px){
+    /*Forum page*/
+    .user-email{
+        display: block;
+    }
+    .layout__title{
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    .forum .table-content_thead th:nth-child(2){
+        width: 18%;
+    }
+    /*Forum End*/
+}
 @media only screen and (max-width : 767px){
+    /*Forum page*/
+    .form_post_details{
+        left: -100px
+    }
+    /*Forum page End*/
+
+}
+@media only screen and (max-width : 768px){
+    /*Create forum*/
+    .close_popup_button{
+        right: 45px;
+    }
+    .icon_list i{
+        width: calc(100%/20);
+    }
+    /*Create forum End*/
+}
+@media only screen and (max-width : 767px){
+    /*Create forum*/
+    .select_icon_popup{
+        width: 605px;
+        height: 200px;
+    }
+    .close_popup_button{
+        right: 20px;
+    }
+    /*Create forum End*/
+
+    /*Partners Page */
+    .modal__wrap{
+        width: 100%;
+    }
+    .partners_form_in{
+        flex-direction: column;
+    }
+    .modal_left_side, .modal_right_side{
+        margin:0 auto;
+    }
+    /*Partners Page End*/
+    /* Wish wall page*/
+    .media_edit{
+        max-width: 100%;
+    }
+    /* Wish wall page*/
     /*Personal Setting page */
     .personal_content_lp label, .personal_content_rp label{
         width: 300px;
@@ -298,19 +482,160 @@
     }
 
     /* Event page end*/
+
+    /* Event settings page*/
+    .es__group .radio-group label > span {
+        margin-top: 10px;
+    }
+
+    .es__group > div > div:nth-child(2) {
+        margin-top: 15px;
+    }
+
+    .es__group:nth-child(2) > div > div:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .event__settings .layout__title {
+        margin-bottom: 15px;
+    }
+
+    .es__group input.input,
+    .es__group textarea {
+        width: 100%;
+    }
+
+    /* Event settings page end*/
+}
+@media only screen and (max-width : 635px){
+    /*Forum page*/
+    .forum_table-desktop{
+        display: none;
+    }
+
+    .es__group > div > div:nth-child(2) {
+        margin-top: 15px;
+    }
+
+    .es__group:nth-child(2) > div > div:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .event__settings .layout__title {
+        margin-bottom: 15px;
+    }
+
+    .es__group input.input,
+    .es__group textarea {
+        width: 100%;
+    }
+
+    /* Event settings page end*/
 }
 
 
 @media only screen and (max-width : 635px){
+
+    /*Forum page*/
+    .forum_table-desktop{
+        display: none;
+    }
+    .forum_table-mobile{
+        display: block;
+    }
+    .forum_table-mobile table tr td{
+        border: 1px solid #bababa;
+        padding: 7px;
+    }
+    .forum_table-mobile table{
+        width: 100%;
+        margin-bottom: 7px;
+    }
+    .forum_table-mobile table:last-child{
+        margin-bottom: 0;
+    }
+    .forum_table-mobile table tr td:first-child{
+        width: 30%;
+        background-color: #f9f9f9;
+    }
+    .form_post_details{
+        left: -89px;
+    }
+    .forum_table-mobile table tr:first-child td:first-child:hover .badge{
+        background-color: #1d1d1e;
+    }
+    .forum_mobile{
+        border-collapse: collapse;
+        /*border: 1px solid #bababa*/
+    }
+    /*Forum page End*/
+
+    /*Create forum*/
+    .select_icon_popup{
+        width: 545px;
+    }
+    .icon_list i{
+        width: calc(100%/18);
+    }
+    /*Create forum End*/
+
+    /*Partners Page*/
+    .partners_list ul li{
+        width: 26%
+    }
+    /*Partners Page End*/
     /*Personal Setting page */
     .personal_content_lp label, .personal_content_rp label{
         width: 270px;
     }
     /*Personal Setting page End*/
 }
-
-
 @media (max-width:575px){
+    /*Create forum*/
+    .select_icon_popup{
+        width: 450px;
+    }
+    .icon_list i{
+        width: calc(100%/12);
+    }
+    .create_forum_wrap .similar_form label span.req_field{
+        position: static;
+    }
+    .create_forum_wrap .similar_form label span.req_field{
+        width: auto;
+    }
+    .file_load_icons{
+        top: 30px;
+        left: 0
+    }
+    .forum_editable_field label .mce-top-part{
+        padding-left: 45px;
+    }
+    .create_forum_wrap .similar_form label input, .create_forum_wrap .similar_form label textarea{
+        margin-left: 0;
+    }
+    .tiny_mce_label{
+        margin-left: 0;
+    }
+    .create_forum_wrap .similar_form label input, .create_forum_wrap .similar_form label textarea{
+        width: 100%;
+    }
+    .create_forum_wrap .similar_form label span.req_field{
+        align-self: flex-start;
+        margin-bottom: 15px;
+    }
+    .editable_field-info{
+        padding-left: 0;
+    }
+    form.similar_form > div.select_icon-wrap > label{
+        margin-left: 0;
+    }
+    /*Create forum End*/
+    /*Wish wall page */
+    .wish_wall_form{
+        padding: 45px
+    }
+    /*Wish wall page end*/
     /*Personal Setting page */
     .personal_content_lp label, .personal_content_rp label{
         width: 100%;
@@ -362,9 +687,34 @@
         min-width: 190px;
     }
 }
-
-
 @media only screen and (max-width : 480px){
+    /*Create forum*/
+    .select_icon_popup{
+        width: 305px;
+        padding: 20px 15px;
+        left: 0;
+    }
+    .icon_list i {
+        width: calc(100%/8);
+    }
+    /*Create forum End*/
+    /*Partners Page*/
+    .modal__wrap{
+        padding: 35px 7px 35px 7px;
+    }
+    .modal_left_side, .modal_right_side{
+        width: 290px;
+    }
+    .partners_list ul li{
+        width: 41%;
+    }
+    /*Wish wall page */
+    .wish_wall_form{
+        padding: 45px 0;
+        box-shadow: none;
+    }
+
+    /*Wish wall page end*/
     .container{
         padding: 0 7px
     }
@@ -394,12 +744,20 @@
     }
     /*Personal Setting page End */
 
+    /*Event/Events*/
     .container-resize {
         padding: 0;
     }
+
+    .events .mobile__table div.date-box>label {
+        width: 78%;
+    }
+
+    .p-0 {
+        padding: 0;
+    }
+    /*Event/Events end*/
 }
-
-
 @media only screen and (max-width : 340px){
     .profile_photo_info{
         width: 100%;
@@ -407,9 +765,10 @@
     .personal_photo_wrap{
         width: 100%;
     }
+    .events .mobile__table div.date-box>label {
+        width: 75%;
+    }
 }
-
-
 @media only screen and (max-width : 320px){
 
 }

@@ -131,14 +131,83 @@ $(document).ready(function () {
         var h=d[g]('body')[0];
         h.appendChild(s);
     }})();
+
     // Datapicker
-    $('#js-date-picker').datepicker({
+    $('#js-date-picker, .js-date-picker').datepicker({
         changeYear: true,
         yearRange: "1950:2018",
         dateFormat: "dd/mm/yy"
     });
+
     // Clear Date value in date field
+    // $('.js-clear_date_field').click(function () {
+    //     $('#js-date-picker').val('');
+    // });
     $('.js-clear_date_field').click(function () {
-        $('#js-date-picker').val('');
+        $(this).next().val('');
+        return false
     });
+
+
+// Date changer (Events page)
+    $('.js-change_date_field').on('click', function () {
+        var prevInput = $(this).prev();
+        var nextInput = $(this).next();
+        $(this).before(nextInput).after(prevInput);
+    });
+// Switch visibility
+    $('.js_icon-switcher').click(function () {
+        $('.select_icon_popup').slideToggle();
+
+    });
+    $('.close_popup_button').click(function () {
+        $('.select_icon_popup').slideUp();
+    });
+
+
+    // tinymce
+    tinymce.init({
+        content_css: [
+            './assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css'],
+        selector: '.js-tinymce',
+        height: 80,
+        verify_html: false,
+        menubar: false,
+        statusbar: false,
+        font_formats:'HelveticaNeueCyr,Font Awesome 5 Free',
+        plugins: [
+            'advlist autolink lists link  charmap  preview anchor ',
+            'table  paste'
+        ],
+        toolbar: 'bold | bullist numlist | italic | link',
+
+    });
+
+    setTimeout(function () {
+        $('.js-selected_icon').each(function () {
+            $(this).on('click',function () {
+                var getIconStyle = $(this).attr('class');
+                console.log(getIconStyle);
+                $('.js_choice-icon').html('<i class="'  + getIconStyle + '"></i>' + ' Choice icon');
+                $('.select_icon_popup').slideUp();
+            })
+        })
+    },500);
+
+    $('.js-validateBtn').on('click',function () {
+       var chekOnEmpty = tinyMCE.activeEditor.getContent();
+       if(chekOnEmpty.length == 0){
+           $('.forum_editable_field label #mce_0_ifr').css('borderColor','red')
+       }})
+
+
+// Time picker (Setting event page)
+    $('.js-time-picker').timepicker({ 'timeFormat': 'h:i A' });
+
+// Radio btns (Setting event page)
+    $('.radio-group .btn').on('click', function () {
+        $(this).closest('.radio-group').find('.btn').removeClass('active');
+        $(this).addClass('active')
+
+    })
 });

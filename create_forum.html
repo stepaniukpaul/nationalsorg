@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <title>Personal Settings</title>
+    <title>Create Forum</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -23,10 +23,13 @@
     <script src="assets/scripts/jQuery/jquery-ui-1.9.2.custom.min.js"></script>
     <script src="./assets/scripts/Slick/slick.min.js"></script>
     <script src="./assets/scripts/clocks.js"></script>
-    <script src="./assets/scripts/main.js"></script>
+    <!--НЕ ДОБАВЛЯТЬ ЭТОТ СКРПИТ НА СТРАНИЦЫ ГДЕ ОН НЕ НУЖЕН-->
+    <script src="./assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/fontawesome-all.js"></script>
     <script src="assets/scripts/forms.js"></script>
     <script src="assets/scripts/tabs.js"></script>
     <script src="assets/scripts/file_loader.js"></script>
+    <script src="assets/scripts/tinymce/tinymce.min.js"></script>
+    <script src="./assets/scripts/main.js"></script>
 </head>
 
 <body>
@@ -189,126 +192,73 @@
             </li>
         </ul>
         <div class="layout__content">
-            <div class="personal_setting_wrap">
-                <div class="personal_information">
-                    <div class="personal_photo_wrap">
-                        <div class="profile_photo_info">
-                            <img class="js-user-photo" src="assets/images/personal-photo.png" alt="">
-                        </div>
-                        <div class="profile_photo_actions">
-                            <button class="clear_photo_field">Remove</button>
-                            <button class="upload_photo-in">Upload</button>
-                            <label for="take_file" class="file_load_button">
-                                Browse...
-                                <input type="file" value="Browse..." id="take_file" >
+            <div class="create_forum_wrap">
+                <form method="GET" class="similar_form">
+                    <label>
+                        <span class="req_field">Title</span>
+                        <input type="text" class="required">
+                    </label>
+                    <label>
+                        <span class="req_field">Short Description:</span>
+                        <input type="text" class="required">
+                    </label>
+                    <div class="forum_editable_field">
+                        <div class="tiny_mce_wrap">
+                            <div class="file_load_icons">
+                                <label class="load_video">
+                                    <i class="fas fa-video"></i>
+                                    <input type="file" id="forum-load_vid" >
+                                </label>
+                                <label class="load_picture">
+                                    <i class="fas fa-image"></i>
+                                    <input type="file" id="forum-load_pict" >
+                                </label>
+                            </div>
+                            <label class="tiny_mce_label">
+                                <span class="req_field">Full Description:</span>
+                                <textarea class="required js-tinymce js-empty_check"></textarea>
                             </label>
                         </div>
+                        <div class="editable_field-info">
+                            <ul>
+                                <li>
+                                    Uploaded
+                                </li>
+                                <li>
+                                    <span class="info_file-name form_js-vid_name">Name</span>
+                                    <span class="info_file-size form_js-vid_size">100</span>
+                                    <span class="info_file-mb">mb</span>
+                                </li>
+                                <li>
+                                    <span class="info_file-name form_js-img_name">Name</span>
+                                    <span class="info_file-size form_js-img_size">15</span>
+                                    <span class="info_file-mb">mb</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <h4 class="home_titles">Personal settings</h4>
-                    <form method="GET" class="formWithValidation personal_content_field">
-                        <div class="personal_form_in">
-                            <div class="personal_content_lp">
-                                <label>
-                                    <span class="req_field">Name</span>
-                                    <input type="text" class="required">
-                                </label>
-                                <label>
-                                    <span class="req_field">Gender</span>
-                                    <input type="text" class="required">
-                                </label>
-                                <label>
-                                    <span>Nickname</span>
-                                    <input type="text">
-                                </label>
-                                <label>
-                                    <span>Country of residence</span>
-                                    <select name="country">
-                                        <option value="">Afganistan (+93)</option>
-                                        <option value="">Afganistan (+94)</option>
-                                        <option value="">Afganistan (+95)</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span class="req_field ">Email</span>
-                                    <input type="text" class="email required">
-                                    <span class="format_example">If you have changed your email address, write it here.</span>
-                                </label>
+                    <div class="select_icon-wrap">
+                        <label>
+                            <span class="req_field">Icon:</span>
+                            <span class="send_btn js_icon-switcher js_choice-icon icon_in">Select the icon</span>
+                        </label>
+                        <div class="select_icon_popup">
+                            <div class="close_popup_button">
+                                <i class="fas fa-times"></i>
                             </div>
-                            <div class="personal_content_rp">
-                                <label>
-                                    <span class="req_field">Surname</span>
-                                    <input type="text" class="required">
-                                </label>
-                                <label class="date_label">
-                                    <span class="req_field">Date of Birth</span>
-                                    <span class="date_select_wrap">
-                                        <span class="focus_date_field js-focus_date_field"><i class="fas fa-calendar-alt"></i></span>
-                                        <span class="clear_date_field js-clear_date_field"><i class="fas fa-times"></i></span>
-                                        <input id="js-date-picker" class="required">
-                                    </span>
-                                    <span class="format_example">Day / Month / Year</span>
-                                </label>
-                                <label>
-                                    <span>Show me like</span>
-                                    <select name="nickname">
-                                        <option value="">Nickname1</option>
-                                        <option value="">Nickname2</option>
-                                        <option value="">Nickname3</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span>City of residence</span>
-                                    <input type="text">
-                                </label>
-                                <label>
-                                    <span class="req_field">Phone number</span>
-                                    <input type="text" class="required">
-                                    <span class="format_example">For example: +33612345678</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="personal_content_change">
-                            <a href="#">Unsubscribe from our email list</a>
-                            <input type="submit" value="Send" class="send_btn">
-                        </div>
-                    </form>
-                </div>
-                <div class="personal_groups">
-                    <div class="personal_group_preview">
-                        <button class="send_btn">Create new group</button>
-                        <h4 class="home_titles">GROUPS</h4>
-                    </div>
-                    <div class="personal_groups_in">
-                        <div class="news-card news-group__item">
-                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
-                            <div class="news-card__content">
-                                <a href="#" class="news-card__title">Name</a>
-                                <a href="#" class="label label_default news-card__label">Tag</a>
-                            </div>
-                        </div>
-                        <div class="news-card news-group__item">
-                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
-                            <div class="news-card__content">
-                                <a href="#" class="news-card__title">Name</a>
-                                <a href="#" class="label label_default news-card__label">Tag</a>
-                            </div>
-                        </div>
-                        <div class="news-card news-group__item">
-                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
-                            <div class="news-card__content">
-                                <a href="#" class="news-card__title">Name</a>
-                                <a href="#" class="label label_default news-card__label">Tag</a>
-                            </div>
-                        </div>
-                        <div class="news-card news-group__item">
-                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
-                            <div class="news-card__content">
-                                <a href="#" class="news-card__title">Name</a>
-                                <a href="#" class="label label_default news-card__label">Tag</a>
+                            <div class="icon_popup_content">
+                                <div class="icon_popup_title">
+                                    Click to choice
+                                </div>
+                                <div class="icon_list" id="js_icon-wrap">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <label class="forum_save_info">
+                        <input value="Save" type="submit" class="send_btn js-validateBtn">
+                    </label>
+                </form>
             </div>
         </div>
     </div>

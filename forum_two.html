@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <title>Personal Settings</title>
+    <title>Forum</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -179,135 +179,240 @@
             </div>
         </nav>
     </div>
-    <div class="container remove_default_styles">
+    <div class="container">
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
-                <a href="/" class="breadcrumbs__link">Главная</a>
+                <a href="/" class="breadcrumbs__link">Forum</a>
             </li>
             <li class="breadcrumbs__item">
-                <span class="breadcrumbs__link breadcrumbs__link_static">Название страницы</span>
+                <a href="/" class="breadcrumbs__link">Жизнь во Франции</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <span class="breadcrumbs__link breadcrumbs__link_static">Медицина, здоровье</span>
             </li>
         </ul>
-        <div class="layout__content">
-            <div class="personal_setting_wrap">
-                <div class="personal_information">
-                    <div class="personal_photo_wrap">
-                        <div class="profile_photo_info">
-                            <img class="js-user-photo" src="assets/images/personal-photo.png" alt="">
-                        </div>
-                        <div class="profile_photo_actions">
-                            <button class="clear_photo_field">Remove</button>
-                            <button class="upload_photo-in">Upload</button>
-                            <label for="take_file" class="file_load_button">
-                                Browse...
-                                <input type="file" value="Browse..." id="take_file" >
-                            </label>
-                        </div>
-                    </div>
-                    <h4 class="home_titles">Personal settings</h4>
-                    <form method="GET" class="formWithValidation personal_content_field">
-                        <div class="personal_form_in">
-                            <div class="personal_content_lp">
-                                <label>
-                                    <span class="req_field">Name</span>
-                                    <input type="text" class="required">
-                                </label>
-                                <label>
-                                    <span class="req_field">Gender</span>
-                                    <input type="text" class="required">
-                                </label>
-                                <label>
-                                    <span>Nickname</span>
-                                    <input type="text">
-                                </label>
-                                <label>
-                                    <span>Country of residence</span>
-                                    <select name="country">
-                                        <option value="">Afganistan (+93)</option>
-                                        <option value="">Afganistan (+94)</option>
-                                        <option value="">Afganistan (+95)</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span class="req_field ">Email</span>
-                                    <input type="text" class="email required">
-                                    <span class="format_example">If you have changed your email address, write it here.</span>
-                                </label>
-                            </div>
-                            <div class="personal_content_rp">
-                                <label>
-                                    <span class="req_field">Surname</span>
-                                    <input type="text" class="required">
-                                </label>
-                                <label class="date_label">
-                                    <span class="req_field">Date of Birth</span>
-                                    <span class="date_select_wrap">
-                                        <span class="focus_date_field js-focus_date_field"><i class="fas fa-calendar-alt"></i></span>
-                                        <span class="clear_date_field js-clear_date_field"><i class="fas fa-times"></i></span>
-                                        <input id="js-date-picker" class="required">
-                                    </span>
-                                    <span class="format_example">Day / Month / Year</span>
-                                </label>
-                                <label>
-                                    <span>Show me like</span>
-                                    <select name="nickname">
-                                        <option value="">Nickname1</option>
-                                        <option value="">Nickname2</option>
-                                        <option value="">Nickname3</option>
-                                    </select>
-                                </label>
-                                <label>
-                                    <span>City of residence</span>
-                                    <input type="text">
-                                </label>
-                                <label>
-                                    <span class="req_field">Phone number</span>
-                                    <input type="text" class="required">
-                                    <span class="format_example">For example: +33612345678</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="personal_content_change">
-                            <a href="#">Unsubscribe from our email list</a>
-                            <input type="submit" value="Send" class="send_btn">
-                        </div>
-                    </form>
+        <div class="layout__content forum forum2">
+
+            <div class="row d-flex align-items-center">
+                <div class="p-0 col-12 col-lg-4">
+                    <h3 class="layout__title">
+                        Forum: <b>Медицина, здоровье</b>
+                    </h3>
                 </div>
-                <div class="personal_groups">
-                    <div class="personal_group_preview">
-                        <button class="send_btn">Create new group</button>
-                        <h4 class="home_titles">GROUPS</h4>
+                <div class="p-0 col-12 col-lg-8">
+                    <div class="form-search__wrap d-flex flex-column flex-sm-row align-items-sm-center align-items-start">
+                        <input class="field field_primary form-search__field" type="text" />
+                        <button class="btn btn_accent form-search__button">
+                            <span class="btn__label">Search</span>
+                        </button>
                     </div>
-                    <div class="personal_groups_in">
-                        <div class="news-card news-group__item">
-                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
-                            <div class="news-card__content">
-                                <a href="#" class="news-card__title">Name</a>
-                                <a href="#" class="label label_default news-card__label">Tag</a>
-                            </div>
-                        </div>
-                        <div class="news-card news-group__item">
-                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
-                            <div class="news-card__content">
-                                <a href="#" class="news-card__title">Name</a>
-                                <a href="#" class="label label_default news-card__label">Tag</a>
-                            </div>
-                        </div>
-                        <div class="news-card news-group__item">
-                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
-                            <div class="news-card__content">
-                                <a href="#" class="news-card__title">Name</a>
-                                <a href="#" class="label label_default news-card__label">Tag</a>
-                            </div>
-                        </div>
-                        <div class="news-card news-group__item">
-                            <a href="#"><img src="./assets/images/2321.png" class="news-card__image" alt="" role="presentation"></a>
-                            <div class="news-card__content">
-                                <a href="#" class="news-card__title">Name</a>
-                                <a href="#" class="label label_default news-card__label">Tag</a>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="p-0 col-12">
+                    <button class="btn btn_primary">
+                        <span class="btn__label">Добавить новую тему</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="p-0 col-12 d-none d-md-block">
+                    <p class="events__subtitle">
+                        Showing entries: <b>1-5</b> of <b>5</b> items
+                    </p>
+                    <table class="table-content desktop__table">
+                        <thead class="table-content_thead">
+                            <tr>
+                                <th>
+                                    <div class="table-content_title">
+                                        <span>Title</span>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table-content_title">
+                                        <span>Creation date</span>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table-content_title">
+                                        <span>Last update</span>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table-content_title">
+                                        <span>Views</span>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table-content_title">
+                                        <span>Number of posts</span>
+                                    </div>
+                                    <a href="#" class="btn btn_accent btn_table">
+                                        Watchlist
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-content_tbody">
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        <span>Title</span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <span>01.01.2018</span>
+                                </td>
+                                <td>
+                                    <span>01.01.2018</span>
+                                </td>
+                                <td>
+                                    <span>1</span>
+                                </td>
+                                <td>
+                                    <span>1</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">
+                                        <span>Title</span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <span>01.01.2018</span>
+                                </td>
+                                <td>
+                                    <span>01.01.2018</span>
+                                </td>
+                                <td>
+                                    <span>1</span>
+                                </td>
+                                <td>
+                                    <span>1</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="p-0 col-12 d-block d-md-none">
+                    <table class="table-content mobile__table">
+                        <tr>
+                            <th>
+                                <div class="table-content_title">
+                                    <span>Title</span>
+                                </div>
+                            </th>
+                            <td>
+                                <a href="#">
+                                    <span>Title</span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="table-content_title">
+                                    <span>Creation date</span>
+                                </div>
+                            </th>
+                            <td>
+                                <span>01.01.2018</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="table-content_title">
+                                    <span>Last update</span>
+                                </div>
+                            </th>
+                            <td>
+                                <span>01.01.2018</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="table-content_title">
+                                    <span>Views</span>
+                                </div>
+                            </th>
+                            <td>
+                                <span>1</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="table-content_title">
+                                    <span>Number of posts</span>
+                                </div>
+                                <a href="#" class="btn btn_accent btn_table">
+                                    Watchlist
+                                </a>
+                            </th>
+                            <td>
+                                <span>1</span>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table-content mobile__table">
+                        <tr>
+                            <th>
+                                <div class="table-content_title">
+                                    <span>Title</span>
+                                </div>
+                            </th>
+                            <td>
+                                <a href="#">
+                                    <span>Title</span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="table-content_title">
+                                    <span>Creation date</span>
+                                </div>
+                            </th>
+                            <td>
+                                <span>01.01.2018</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="table-content_title">
+                                    <span>Last update</span>
+                                </div>
+                            </th>
+                            <td>
+                                <span>01.01.2018</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="table-content_title">
+                                    <span>Views</span>
+                                </div>
+                            </th>
+                            <td>
+                                <span>1</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="table-content_title">
+                                    <span>Number of posts</span>
+                                </div>
+                                <a href="#" class="btn btn_accent btn_table">
+                                    Watchlist
+                                </a>
+                            </th>
+                            <td>
+                                <span>1</span>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
